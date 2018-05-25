@@ -1,0 +1,40 @@
+/* pages/login/login.wxss */
+.cimgSize{
+  height:100px;
+  width:260px;
+  margin: auto;
+  padding-top: 60px;
+}
+.cimgSize image{
+  height:100%;
+  width:100%;
+}
+.boxpositio{
+  width: 80%;
+  margin: auto;
+  min-height: 20px;
+  margin-top: 40px;
+}
+.marginTop{
+  margin-top:10px; 
+}
+.buttonStyle{
+  margin: 30px 0  16px 0;
+  
+}
+.buttonStyle button{
+  margin: 30px 0  16px 0;
+  color: #fff;
+}
+.buttonStyle button{
+  background: #0a9e89;
+}
+.weui-input{
+  font-size: 16px;
+  padding: 8px 0px 0px 4px;
+  margin-top: 20px;
+}
+.fontStyle{
+  font-size: 16px;
+  color:#666;
+}

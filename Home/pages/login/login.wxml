@@ -1,0 +1,31 @@
+<view class='page__bd'>
+  <view class="cimgSize">
+    <image src='../images/logo.png'></image>
+  </view>
+  <form>
+    <view class='boxpositio'>
+      <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="手机号码" />
+          </view>
+      </view>
+      <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="输入密码" />
+          </view>
+      </view>
+      <view class="weui-cell weui-cell_input weui-cell_vcode">
+      </view>
+      <view class="page__bd page__bd_spacing marginTop buttonStyle">
+        <button class="weui-btn" >登录</button>
+    </view>
+    <view class="page__bd page__bd_spacing">
+        <view class="weui-flex">
+            <view><view class="placeholder fontStyle">快速登录</view></view>
+            <view class="weui-flex__item"></view>
+            <view><view class="placeholder fontStyle">忘记密码?</view></view>
+        </view>
+    </view>
+    </view>
+  </form>
+</view>
