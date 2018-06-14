@@ -1,6 +1,5 @@
 {
   "pages":[
-    "pages/login/login",
     "pages/order_wait/order_wait",
     "pages/orderOwner/orderOwner",
     "pages/quickLogon/quickLogon",
@@ -13,6 +12,9 @@
     "navigationBarTextStyle":"#fff"
   },
   "tabBar": {
+    "color":"#6e6e6e",
+    "selectedColor":"#30bc8f",
+    "backgroundColor":"#ffffff",
     "list": [
       {
         "pagePath": "pages/order_wait/order_wait",
@@ -21,6 +23,18 @@
       {
         "pagePath": "pages/orderOwner/orderOwner",
         "text": "已接单"
+      },
+      {
+        "pagePath": "pages/orderOwner/orderOwner",
+        "text": "报告"
+      },
+      {
+        "pagePath": "pages/orderOwner/orderOwner",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/orderOwner/orderOwner",
+        "text": "我的"
       }
     ]
   }

@@ -1,5 +1,29 @@
-<view class='page__bd'>
+<view class='page__owner'>
   <view>
-  <text>test</text>
+      <input class='searchbox' placeholder='姓名、电话、楼盘名称'         placeholder-style='text-align:center' confirm-type='Search'>
+      </input>
+  </view>
+  <view class='container_order'>
+    <view class='order'>
+      <view class='order_top'>
+        <text class='float_l'>订单编号：123456</text>
+        <text class='float_r'>
+          <text class='status_order'>服务中</text>
+          <text class='space_order'>|</text>
+          <text class='service_order'>陪签服务</text>
+        </text>
+      </view>
+      <view class='order_container'>
+        <view class='headeimg'><image></image></view>
+        <view class='content'>
+          <view>
+            <text class='name'>姓名</text>
+            <text class='phone'>15058160000</text>
+          </view>
+          <view class='tips'>
+          </view>
+        </view>
+      </view>
+    </view>
   </view>
 </view>

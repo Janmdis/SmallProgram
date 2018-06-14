@@ -5,7 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    list:[
+      {
+        ordernum:123456,
+        name:'姓名',
+        address:'上海浦东',
+        conditon1:'复层',
+        conditon1: '89㎡',
+        conditon1: '开工交底3.0',
+        conditon1: '延寿街店3.0',
+        status:'服务中',
+        service:'陪签服务'
+      }
+    ]
   },
 
   /**
