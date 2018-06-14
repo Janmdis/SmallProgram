@@ -1,11 +1,11 @@
-// pages/login/login.js
+// pages/quickLogon/quickLogon.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+   
   },
 
   /**
@@ -35,20 +35,9 @@ Page({
   onHide: function () {
   
   },
-  quickLogon:()=>{
+  gotoLogon:()=>{
     wx.navigateTo({
-      url:'../quickLogon/quickLogon'
-    })
-  },
-  missCipher: () => {
-    wx.navigateTo({
-      url: '../missCipher/missCipher',
+      url: '../login/login',
     })
   }
-
-
- 
-
-
-  
 })

@@ -1,10 +1,12 @@
 {
   "pages":[
-    "pages/login/login"
+    "pages/login/login",
+    "pages/quickLogon/quickLogon",
+    "pages/missCipher/missCipher"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#0a9e91",
+    "navigationBarBackgroundColor": "#1bd375",
     "navigationBarTitleText": "净润家",
     "navigationBarTextStyle":"#fff"
   }

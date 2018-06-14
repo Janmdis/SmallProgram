@@ -1,0 +1,8 @@
+.swiper_box{
+  widows: 100;
+}
+swiper-item image{
+    width: 100%;
+    display:inline-block;
+    overflow: hidden;
+}
