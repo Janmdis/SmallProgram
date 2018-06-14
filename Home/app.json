@@ -2,7 +2,7 @@
   "pages":[
     "pages/login/login",
     "pages/order_wait/order_wait",
-    "pages/order_owner/order_owner",
+    "pages/orderOwner/orderOwner",
     "pages/quickLogon/quickLogon",
     "pages/missCipher/missCipher"
   ],
@@ -19,7 +19,7 @@
         "text": "待结单"
       },
       {
-        "pagePath": "pages/order_owner/order_owner",
+        "pagePath": "pages/orderOwner/orderOwner",
         "text": "已接单"
       }
     ]

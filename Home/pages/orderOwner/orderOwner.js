@@ -1,4 +1,4 @@
-// pages/order_owner/order_owner.js
+// pages/orderOwner/orderOwner.js
 Page({
 
   /**

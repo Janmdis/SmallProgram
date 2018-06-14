@@ -44,23 +44,11 @@ Page({
     wx.navigateTo({
       url: '../missCipher/missCipher',
     })
-  }
-
-
- 
-
-
-  
-<<<<<<< HEAD
   },
-  // 登录
-  login:function(){
-    console.log('登录');
-    wx.redirectTo({
-      url: '../order_owner/order_owner',
+  login: () => {
+    console.log(111);
+    wx.switchTab({
+      url: '../orderOwner/orderOwner',
     })
-    console.log('结束');
-  }
-=======
->>>>>>> 2724f4c2eb42009faa00500def3b87db2f9ecd26
+  },
 })
