@@ -24,6 +24,6 @@
      
 </view>
     <view class='buttonWidth'>
-      <button class="weui-btn">退出当前账号</button>
+      <button class="weui-btn">退出账号</button>
     </view>
 </view>

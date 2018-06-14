@@ -9,13 +9,38 @@ Page({
       {
         ordernum:123456,
         name:'姓名',
+        phone:'15058160089',
         address:'上海浦东',
         conditon1:'复层',
-        conditon1: '89㎡',
-        conditon1: '开工交底3.0',
-        conditon1: '延寿街店3.0',
+        conditon2: '89',
+        conditon3: '开工交底3.0',
+        conditon4: '延寿街店3.0',
         status:'服务中',
         service:'陪签服务'
+      },
+      {
+        ordernum: 123456,
+        name: '姓名',
+        phone: '15058160089',
+        address: '上海浦东',
+        conditon1: '复层',
+        conditon2: '89',
+        conditon3: '开工交底3.0',
+        conditon4: '延寿街店3.0',
+        status: '服务中',
+        service: '陪签服务'
+      },
+      {
+        ordernum: 123456,
+        name: '姓名',
+        phone: '15058160089',
+        address: '上海浦东',
+        conditon1: '复层',
+        conditon2: '89',
+        conditon3: '开工交底3.0',
+        conditon4: '延寿街店3.0',
+        status: '服务中',
+        service: '陪签服务'
       }
     ]
   },
