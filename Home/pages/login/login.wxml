@@ -5,28 +5,32 @@
   </view>
   <form>
     <view class='boxpositio'>
-      <view class="weui-cell weui-cell_input weui-cell_vcode">
+      <view class=" weui-cell_input weui-cell_vcode">
           <view class="weui-cell__bd">
+              <view class="iconfont icon-user"></view>  
               <input class="weui-input" placeholder="手机号码" />
           </view>
       </view>
-      <view class="weui-cell weui-cell_input weui-cell_vcode">
+      <view class=" weui-cell_input weui-cell_vcode">
           <view class="weui-cell__bd">
+          <view class="iconfont icon-pass"></view>  
               <input class="weui-input" placeholder="输入密码" />
           </view>
       </view>
-      <view class="weui-cell weui-cell_input weui-cell_vcode">
-      </view>
+      <view class="page__bd page__bd_spacing">
+        <view class="weui-flex">
+            <view class="weui-flex__item"></view>
+            <view><view class="placeholder fontStyle" bindtap='missCipher'>忘记密码</view></view>
+        </view>
+    </view>
       <view class="page__bd page__bd_spacing marginTop buttonStyle">
         <button class="weui-btn" bindtap='login' >登录</button>
     </view>
-    <view class="page__bd page__bd_spacing">
-        <view class="weui-flex">
-            <view><view class="placeholder fontStyle" bindtap='quickLogon'>快速登录</view></view>
-            <view class="weui-flex__item"></view>
-            <view><view class="placeholder fontStyle" bindtap='missCipher'>忘记密码?</view></view>
-        </view>
+    <view class='textIfo'>
+      <text>绿城服务旗下集团唯一第三方监管</text>
+      <text>装修前找管家.全程无忧</text>
     </view>
+    
     </view>
   </form>
 </view>
