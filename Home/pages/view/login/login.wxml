@@ -1,6 +1,6 @@
 <view class='page__bd'>
   <view class="cimgSize">
-    <image src='../images/logo.png'></image>
+    <image src='../../images/logo.png'></image>
     <text>绿城装修管家</text>
   </view>
   <form>

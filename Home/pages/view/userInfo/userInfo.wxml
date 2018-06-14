@@ -2,7 +2,7 @@
   <view class='userImf'>
     <view class='userBox'></view>
     <view class='boxImg'>
-      <image src='../images/logo.png'></image>
+      <image src='../../images/logo.png'></image>
     </view>
   </view>
   <view class='userText'>
@@ -72,7 +72,7 @@
       <view class="weui-cell__bd">分享朋友</view>
       <view class="weui-cell__ft weui-cell__ft_in-access"></view>
     </navigator>
-    <navigator url="../setInfo/setInfo" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <navigator url="../view/setInfo/setInfo" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
       <view class="weui-cell__hd">
         <view class="iconfont icon-set" ></view>  
       </view>

@@ -1,11 +1,12 @@
 {
   "pages":[
-    "pages/order_wait/order_wait",
-    "pages/orderOwner/orderOwner",
-    "pages/quickLogon/quickLogon",
-    "pages/missCipher/missCipher",
-    "pages/userInfo/userInfo",
-    "pages/setInfo/setInfo"
+    "pages/view/login/login",
+    "pages/view/order_wait/order_wait",
+    "pages/view/orderOwner/orderOwner",
+    "pages/view/quickLogon/quickLogon",
+    "pages/view/missCipher/missCipher",
+    "pages/view/userInfo/userInfo",
+    "pages/view/setInfo/setInfo"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -19,23 +20,23 @@
     "backgroundColor":"#ffffff",
     "list": [
       {
-        "pagePath": "pages/order_wait/order_wait",
+        "pagePath": "pages/view/order_wait/order_wait",
         "text": "待结单"
       },
       {
-        "pagePath": "pages/orderOwner/orderOwner",
+        "pagePath": "pages/view/orderOwner/orderOwner",
         "text": "已接单"
       },
       {
-        "pagePath": "pages/orderOwner/orderOwner",
+        "pagePath": "pages/view/orderOwner/orderOwner",
         "text": "报告"
       },
       {
-        "pagePath": "pages/orderOwner/orderOwner",
+        "pagePath": "pages/view/orderOwner/orderOwner",
         "text": "消息"
       },
       {
-        "pagePath": "pages/userInfo/userInfo",
+        "pagePath": "pages/view/userInfo/userInfo",
         "text": "我的"
       }
     ]
