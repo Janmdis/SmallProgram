@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/login/login"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor":"#0a9e91",
+    "navigationBarTitleText": "绿城管家服务",
+    "backgroundColor":"#FFF",
+    "navigationBarTextStyle":"white"
+  }
+}

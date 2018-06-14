@@ -1,11 +1,11 @@
-// pages/login/login.js
+// pages/quickLogon/quickLogon.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+   
   },
 
   /**
@@ -35,32 +35,9 @@ Page({
   onHide: function () {
   
   },
-  quickLogon:()=>{
+  gotoLogon:()=>{
     wx.navigateTo({
-      url:'../quickLogon/quickLogon'
-    })
-  },
-  missCipher: () => {
-    wx.navigateTo({
-      url: '../missCipher/missCipher',
+      url: '../login/login',
     })
   }
-
-
- 
-
-
-  
-<<<<<<< HEAD
-  },
-  // 登录
-  login:function(){
-    console.log('登录');
-    wx.redirectTo({
-      url: '../order_owner/order_owner',
-    })
-    console.log('结束');
-  }
-=======
->>>>>>> 2724f4c2eb42009faa00500def3b87db2f9ecd26
 })

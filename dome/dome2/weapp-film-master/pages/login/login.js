@@ -35,32 +35,32 @@ Page({
   onHide: function () {
   
   },
-  quickLogon:()=>{
-    wx.navigateTo({
-      url:'../quickLogon/quickLogon'
-    })
-  },
-  missCipher: () => {
-    wx.navigateTo({
-      url: '../missCipher/missCipher',
-    })
-  }
 
-
- 
-
-
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
   
-<<<<<<< HEAD
   },
-  // 登录
-  login:function(){
-    console.log('登录');
-    wx.redirectTo({
-      url: '../order_owner/order_owner',
-    })
-    console.log('结束');
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+  
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+  
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+  
   }
-=======
->>>>>>> 2724f4c2eb42009faa00500def3b87db2f9ecd26
 })

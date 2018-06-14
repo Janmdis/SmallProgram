@@ -1,7 +1,6 @@
 <view class='page__bd'>
   <view class="cimgSize">
     <image src='../images/logo.png'></image>
-    <text>绿城装修管家</text>
   </view>
   <form>
     <view class='boxpositio'>
@@ -18,13 +17,13 @@
       <view class="weui-cell weui-cell_input weui-cell_vcode">
       </view>
       <view class="page__bd page__bd_spacing marginTop buttonStyle">
-        <button class="weui-btn" bindtap='login' >登录</button>
+        <button class="weui-btn" >登录</button>
     </view>
     <view class="page__bd page__bd_spacing">
         <view class="weui-flex">
-            <view><view class="placeholder fontStyle" bindtap='quickLogon'>快速登录</view></view>
+            <view><view class="placeholder fontStyle"></view></view>
             <view class="weui-flex__item"></view>
-            <view><view class="placeholder fontStyle" bindtap='missCipher'>忘记密码?</view></view>
+            <view><view class="placeholder fontStyle" bindtap='gotoLogon'>密码登录</view></view>
         </view>
     </view>
     </view>

@@ -1,26 +1,13 @@
 /* pages/login/login.wxss */
-page{
-  height: 100% ;
-}
-.page__bd{
-  height: 100%;
-}
 .cimgSize{
   height:100px;
-  width:120px;
+  width:260px;
   margin: auto;
   padding-top: 60px;
 }
-.cimgSize text{
-  font-size:18px;
-  color:#fff;
-  font-family:"微软雅黑";
-  font-weight: 700;
-  text-shadow:2px 2px 4px #777;
-}
 .cimgSize image{
   height:100%;
-  width:90%;
+  width:100%;
 }
 .boxpositio{
   width: 80%;
@@ -40,14 +27,29 @@ page{
   color: #fff;
 }
 .buttonStyle button{
-  background: #fff;
+  background: #0a9e89;
 }
 .weui-input{
   font-size: 16px;
-  padding: 8px 0px 0px 4px;
-  margin-top: 20px;
+  /* padding: 8px 0px 0px 4px;
+  margin-top: 20px; */
+}
+.weui-cell_vcode{
+  /* padding: 8px 0px 0px 4px; */
+  padding-top: 20px;
+}
+.weui-vcode-btn{
+  border:1px solid #e5e5e5;
 }
 .fontStyle{
   font-size: 16px;
   color:#666;
+}
+.ipoheColor{
+  font-size: 16px;
+  color:#666;
+
+}
+.getcode{
+  margin-bottom: 10px;
 }
