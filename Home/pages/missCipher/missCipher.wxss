@@ -1,55 +1,26 @@
-/* pages/login/login.wxss */
-.cimgSize{
-  height:100px;
-  width:260px;
-  margin: auto;
-  padding-top: 60px;
-}
-.cimgSize image{
-  height:100%;
-  width:100%;
-}
-.boxpositio{
+
+.buttonStyle{
   width: 80%;
   margin: auto;
-  min-height: 20px;
-  margin-top: 40px;
 }
 .marginTop{
-  margin-top:10px; 
+  margin-top: 20px;
 }
-.buttonStyle{
-  margin: 30px 0  16px 0;
-  
+.weui-cell{
+  padding: 10px 20px;
+}
+.iconfont{
+  font-size: 20px;
+  padding: 0px 10px;
+  color:#666;
+  margin-top: 6px;
+}
+.getcode {
+  border: none;
+  color:#fff;
+  background: #11b786;
 }
 .buttonStyle button{
-  margin: 30px 0  16px 0;
-  color: #fff;
-}
-.buttonStyle button{
-  background: #0a9e89;
-}
-.weui-input{
-  font-size: 16px;
-  /* padding: 8px 0px 0px 4px;
-  margin-top: 20px; */
-}
-.weui-cell_vcode{
-  /* padding: 8px 0px 0px 4px; */
-  padding-top: 20px;
-}
-.weui-vcode-btn{
-  border:1px solid #e5e5e5;
-}
-.fontStyle{
-  font-size: 16px;
-  color:#666;
-}
-.ipoheColor{
-  font-size: 16px;
-  color:#666;
-
-}
-.getcode{
-  margin-bottom: 10px;
+  background: #11b786;
+  color:#fff;
 }

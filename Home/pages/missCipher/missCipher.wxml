@@ -1,21 +1,15 @@
 <view class='page__bd'>
-  <view class="cimgSize">
-    <image src='../images/logo.png'></image>
-  </view>
+  
   <form>
     <view class='boxpositio'>
       <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="iconfont icon-users"></view>  
           <view class="weui-cell__bd">
               <input class="weui-input" placeholder="手机号码" />
           </view>
       </view>
       <view class="weui-cell weui-cell_input weui-cell_vcode">
-          <view class="weui-cell__bd">
-              <input class="weui-input" placeholder="输入密码" />
-          </view>
-      </view>
-      <view class="weui-cell weui-cell_input weui-cell_vcode">
-         
+          <view class="iconfont icon-email"></view>  
           <view class="weui-cell__bd">
               <input class="weui-input" placeholder="请输入验证码" />
           </view>
@@ -24,16 +18,21 @@
           </view>
       </view>
       <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="iconfont icon-users"></view>  
+          <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="输入新密码" />
+          </view>
+      </view>
+      <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="iconfont icon-users"></view>  
+          <view class="weui-cell__bd">
+              <input class="weui-input" placeholder="输入确认新密码" />
+          </view>
+      </view>
+      <view class="weui-cell weui-cell_input weui-cell_vcode">
       </view>
       <view class="page__bd page__bd_spacing marginTop buttonStyle">
-        <button class="weui-btn" >登录</button>
-    </view>
-    <view class="page__bd page__bd_spacing">
-        <view class="weui-flex">
-            <view><view class="placeholder fontStyle" ></view></view>
-            <view class="weui-flex__item"></view>
-            <view><view class="placeholder fontStyle" bindtap='gotoLogon'>密码登录</view></view>
-        </view>
+        <button class="weui-btn" >下一步</button>
     </view>
     </view>
   </form>
