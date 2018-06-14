@@ -3,7 +3,9 @@
     "pages/order_wait/order_wait",
     "pages/orderOwner/orderOwner",
     "pages/quickLogon/quickLogon",
-    "pages/missCipher/missCipher"
+    "pages/missCipher/missCipher",
+    "pages/userInfo/userInfo",
+    "pages/setInfo/setInfo"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -33,7 +35,7 @@
         "text": "消息"
       },
       {
-        "pagePath": "pages/orderOwner/orderOwner",
+        "pagePath": "pages/userInfo/userInfo",
         "text": "我的"
       }
     ]

@@ -1,0 +1,96 @@
+.userImf{
+  position: relative;
+}
+.userBox{
+  height: 120px;
+  background: #11b786;
+}
+.boxImg{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: -50px;
+  background: #fff;
+  border-radius: 50%;
+  border:8px solid #fff;
+  left:50%;
+  margin-left: -54px; 
+
+}
+.boxImg image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 4px 4px 10px #ddd;
+}
+.userText{
+  height: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+.marginBox{
+  display: inline-block;
+  height: 100%;
+  margin: auto;
+  text-align: left
+}
+.usrName{
+   float: left;
+   font-size: 24px;
+}
+.userInfo{
+  float: left;
+}
+.line{
+  height: 60%;
+  margin: 4px;
+  float: left;
+  width: 1px;
+  background: #ddd;
+}
+
+.lines{
+  height: 60%;
+  width: 1px;
+  background: #ddd;
+  position: absolute;
+  top: 20%;
+}
+.green {
+  color: #11b786;
+}
+.userInfo text{
+  display: block;
+   font-size: 12px;
+}
+.fleBox{
+  text-align: center;
+  position: relative;
+  border-top:6px solid #ededed;
+  border-bottom:6px solid #f5f5f5;
+  padding: 10px 0;
+  
+}
+.weui-flex__item{
+  line-height: 20px;
+}
+.weui-flex__item text:nth-child(2){
+  font-size: 12px;
+  color:#666;
+}
+.fleBox text{
+  display: block;
+}
+.iconfont{
+  text-align: center;
+  font-size: 18px;
+  margin-right: 5px;
+  vertical-align: middle;
+  width:30px; 
+  height: 30px;
+  line-height: 30px;
+}
+.icon-add{font-size: 22px;color:#f5d69b;}
+.icon-service{font-size: 22px;color:#518fec;}
+.icon-share{color:#7cec54;} 
+.icon-set{color:#075a43;}

@@ -1,0 +1,17 @@
+.buttonWidth {
+
+  margin-top: 10px;
+ 
+}
+.buttonWidth button{
+ border: none;
+ background: #fff;
+}
+.mtop{
+  padding-top:10px; 
+  background: #f5f5f5;
+  height: 100%;
+}
+page{
+  height: 100%;
+}

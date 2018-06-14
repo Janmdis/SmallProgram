@@ -7,7 +7,9 @@ Page({
    */
   data: {
     time: '获取验证码', //倒计时 
-    currentTime: 60
+    currentTime: 60,
+    condition:true,
+    tiems:true
   },
 
   /**

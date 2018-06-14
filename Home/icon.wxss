@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'iconfont';  /* project id 707796 */
-  src: url('//at.alicdn.com/t/font_707796_dz5yh2lxtw.eot');
-  src: url('//at.alicdn.com/t/font_707796_dz5yh2lxtw.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_707796_dz5yh2lxtw.woff') format('woff'),
-  url('//at.alicdn.com/t/font_707796_dz5yh2lxtw.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_707796_dz5yh2lxtw.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_707796_o26tti4h57.eot');
+  src: url('//at.alicdn.com/t/font_707796_o26tti4h57.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_707796_o26tti4h57.woff') format('woff'),
+  url('//at.alicdn.com/t/font_707796_o26tti4h57.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_707796_o26tti4h57.svg#iconfont') format('svg');
 }
 .iconfont {  
   font-family: "iconfont" !important;  
@@ -18,3 +18,8 @@
 .icon-pass:before { content: "\e60e"}  
 .icon-email:before { content: "\e663"}  
 .icon-users:before { content: "\e62f"}  
+.icon-loock:before { content: "\e688"}  
+.icon-add:before { content: "\e659"}  
+.icon-service:before { content: "\e63a"}  
+.icon-share:before { content: "\e600"}  
+.icon-set:before { content: "\e610"}  

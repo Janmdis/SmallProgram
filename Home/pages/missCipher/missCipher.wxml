@@ -1,5 +1,5 @@
 <view class='page__bd'>
-  
+  <view wx:if="{{condition}}">
   <form>
     <view class='boxpositio'>
       <view class="weui-cell weui-cell_input weui-cell_vcode">
@@ -18,22 +18,23 @@
           </view>
       </view>
       <view class="weui-cell weui-cell_input weui-cell_vcode">
-          <view class="iconfont icon-users"></view>  
+          <view class="iconfont icon-loock"></view>  
           <view class="weui-cell__bd">
-              <input class="weui-input" placeholder="输入新密码" />
+              <input class="weui-input" type='password' placeholder="输入新密码" />
           </view>
       </view>
       <view class="weui-cell weui-cell_input weui-cell_vcode">
-          <view class="iconfont icon-users"></view>  
+          <view class="iconfont icon-loock"></view>  
           <view class="weui-cell__bd">
-              <input class="weui-input" placeholder="输入确认新密码" />
+              <input class="weui-input" type='password' placeholder="输入确认新密码" />
           </view>
       </view>
       <view class="weui-cell weui-cell_input weui-cell_vcode">
       </view>
       <view class="page__bd page__bd_spacing marginTop buttonStyle">
-        <button class="weui-btn" >下一步</button>
+        <button class="weui-btn" >完成</button>
     </view>
     </view>
   </form>
+  </view>
 </view>
