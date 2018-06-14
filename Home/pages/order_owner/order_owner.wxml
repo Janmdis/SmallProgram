@@ -1,0 +1,5 @@
+<view class='page__bd'>
+  <view class="cimgSize">
+    <text>测试</text>
+  </view>
+</view>

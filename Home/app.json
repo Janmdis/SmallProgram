@@ -1,11 +1,25 @@
 {
   "pages":[
-    "pages/login/login"
+    "pages/login/login",
+    "pages/order_wait/order_wait",
+    "pages/order_owner/order_owner"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#0a9e91",
     "navigationBarTitleText": "净润家",
     "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/order_wait/order_wait",
+        "text": "待结单"
+      },
+      {
+        "pagePath": "pages/order_owner/order_owner",
+        "text": "已接单"
+      }
+    ]
   }
 }

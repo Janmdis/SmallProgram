@@ -1,4 +1,4 @@
-// pages/login/login.js
+// pages/order_wait/order_wait.js
 Page({
 
   /**
@@ -62,13 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  // 登录
-  login:function(){
-    console.log('登录');
-    wx.redirectTo({
-      url: '../order_owner/order_owner',
-    })
-    console.log('结束');
   }
 })
