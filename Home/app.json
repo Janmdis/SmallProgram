@@ -6,7 +6,10 @@
     "pages/view/quickLogon/quickLogon",
     "pages/view/missCipher/missCipher",
     "pages/view/userInfo/userInfo",
-    "pages/view/setInfo/setInfo"
+    "pages/view/setInfo/setInfo",
+    "pages/view/setpass/setpass",
+    "pages/view/perfectUser/perfectUser",
+    "pages/view/info/info"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -32,7 +35,7 @@
         "text": "报告"
       },
       {
-        "pagePath": "pages/view/orderOwner/orderOwner",
+        "pagePath": "pages/view/info/info",
         "text": "消息"
       },
       {

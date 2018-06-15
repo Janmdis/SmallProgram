@@ -1,0 +1,27 @@
+.buttonWidth {
+
+  margin-top: 40px;
+ 
+}
+.buttonWidth button{
+ border: none;
+ width: 80%;
+ margin: auto;
+ background: #11b786;
+ color:#fff;
+}
+.isOk{
+  text-align: center;
+}
+.isOk text{
+ font-size: 18px;
+}
+.isOkImg{
+  width: 100px;
+  height: 100px;
+  margin: 40px auto;
+}
+.isOkImg image{
+  width: 100%;
+  height: 100%;
+}
