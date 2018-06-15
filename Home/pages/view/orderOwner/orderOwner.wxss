@@ -28,6 +28,7 @@ page{
   overflow: hidden;
   border-bottom: 1rpx solid #cccccc;
   padding-bottom: 10rpx;
+  color:#757575;
 }
 .order .order_top .float_l{
   float: left;

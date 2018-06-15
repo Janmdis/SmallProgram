@@ -1,0 +1,14 @@
+<view class='orderdetail'>
+    <view>
+          <text class='number'>订单编号：<text class='red'>{{orderdetail.number}}</text>
+          </text>
+          <text class='servicename'>{{orderdetail.servicename}}</text>
+    </view>
+    <view>
+        <view class='titles'>业主信息</view>
+        <view class='content_detail'>
+           <text class='half'>业主姓名：{{orderdetail.username}}</text>
+           <text class='half'>联系方式：{{orderdetail.phone}}</text>
+        </view>
+    </view> 
+</view>

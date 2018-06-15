@@ -99,5 +99,11 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  toDetails(event){
+    console.log(111);
+    wx.navigateTo({
+      url: '../orderDetails/orderDetails',
+    })
   }
 })

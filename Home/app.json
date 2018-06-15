@@ -1,12 +1,13 @@
 {
   "pages":[
-    "pages/view/login/login",
+    "pages/view/orderDetails/orderDetails",
     "pages/view/order_wait/order_wait",
     "pages/view/orderOwner/orderOwner",
     "pages/view/quickLogon/quickLogon",
     "pages/view/missCipher/missCipher",
     "pages/view/userInfo/userInfo",
     "pages/view/setInfo/setInfo"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -21,23 +22,33 @@
     "list": [
       {
         "pagePath": "pages/view/order_wait/order_wait",
-        "text": "待结单"
+        "text": "待结单",
+        "iconPath":"pages/images/icon/order1_common.png",
+        "selectedIconPath":"pages/images/icon/order1_selected.png"
       },
       {
         "pagePath": "pages/view/orderOwner/orderOwner",
-        "text": "已接单"
+        "text": "已接单",
+        "iconPath": "pages/images/icon/order2_common.png",
+        "selectedIconPath": "pages/images/icon/order2_selected.png"
       },
       {
         "pagePath": "pages/view/orderOwner/orderOwner",
-        "text": "报告"
+        "text": "报告",
+        "iconPath": "pages/images/icon/order3_common.png",
+        "selectedIconPath": "pages/images/icon/order3_selected.png"
       },
       {
         "pagePath": "pages/view/orderOwner/orderOwner",
-        "text": "消息"
+        "text": "消息",
+        "iconPath": "pages/images/icon/order4_common.png",
+        "selectedIconPath": "pages/images/icon/order4_selected.png"
       },
       {
         "pagePath": "pages/view/userInfo/userInfo",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "pages/images/icon/order5_common.png",
+        "selectedIconPath": "pages/images/icon/order5_selected.png"
       }
     ]
   }

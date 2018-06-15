@@ -4,7 +4,7 @@
       </input>
   </view>
   <scroll-view class='container_order' scroll-y='true'>
-    <view class='order' wx:for='{{list}}'>
+    <view class='order' wx:for='{{list}}' bindtap='toDetails' data-id='item.id'>
       <view class='order_top'>
         <text class='float_l'>订单编号：{{item.ordernum}}</text>
         <text class='float_r'>
