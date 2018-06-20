@@ -1,8 +1,10 @@
 {
   "pages":[
+    "pages/view/orderDetails/orderDetails",
+    "pages/view/reportAccept/reportAccept",
+    "pages/view/login/login",
     "pages/view/orderWait/orderWait",
     "pages/view/orderOwner/orderOwner",
-    "pages/view/orderDetails/orderDetails",
     
     "pages/view/quickLogon/quickLogon",
     "pages/view/missCipher/missCipher",
