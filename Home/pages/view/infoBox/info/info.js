@@ -1,5 +1,5 @@
 // pages/login/login.js
-var network = require("../../../utils/network.js")
+var network = require("../../../../utils/network.js")
 Page({
 
   /**
@@ -13,11 +13,11 @@ Page({
     datalist: [{
       tiem: '2018-01-05  13:01',
       info: '你有一个新订单请尽快接收',
-      urls: "../../view/setpass/setpass"
+      urls: "../../../view/infoBox/comment/comment"
     },{
         tiem: '2018-01-06  13:01',
         info: '你有一个新评价，点击查看',
-        urls: "../../view/setpass/setpass"
+        urls: "../../../view/infoBox/orderDeil/orderDeil"
       }]
       
   },
@@ -41,7 +41,7 @@ Page({
       keyword: '我',
       page: that.data.page
     }
-    network.requestLoading('https://route.showapi.com/213-1', data, message, function (res) {
+    network.requestLoading('xxx', data, message, function (res) {
       console.log(res)
       var contentlistTem = that.data.contentlist
       if (res.showapi_res_code == 0) {

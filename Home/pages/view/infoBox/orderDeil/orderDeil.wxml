@@ -1,0 +1,80 @@
+<view class='mtop'>
+<view class="weui-cells weui-cells_after-title">
+    <view  class="weui-cell" >
+        <view class="weui-cell__bd"><view class="lineGreen"></view>订单编号：2935995059505</view>
+        <view class="weui-cell__ft">全程监理服务</view>
+    </view>
+    <view class='viewBox userInfo'>
+      <view class='newTop'><view class="lineGreen"></view>业主信息</view>
+      <view class='newBox'>
+      <view class="weui-flex">
+            <view class="weui-flex__item">
+            <view class="placeholder">业主姓名：<text>汪升维</text></view>
+            </view>
+            <view class="weui-flex__item">
+            <view class="placeholder">联系方式：<text>13568981234</text></view>
+            </view>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item">
+            <view class="placeholder">业主地址：<text>杭州市西湖区科技园南区R2-B三楼步步高duyB</text></view>
+            </view>
+        </view>
+      </view>
+    </view>
+    <view class='viewBox'>
+      <view class='newTop'><view class="lineGreen"></view>业主信息</view>
+      <view class='newBox'>
+      <view class="weui-flex">
+            <view class="weui-flex__item">
+            <view class="placeholder">房屋类型：<text>平房</text></view>
+            </view>
+            <view class="weui-flex__item">
+            <view class="placeholder">房屋面积：<text>100㎡</text></view>
+            </view>
+        </view>
+      </view>
+    </view>
+    <view class='viewBox'>
+      <view class='newTop'><view class="lineGreen"></view>客服备注</view>
+      <view class='newBox'>
+        <view class="weui-flex">
+            <view class="weui-flex__item">
+            <view class="placeholder">客服创建订单是客户的一些信息（比如装修公司信息。陪签时间，设计图纸，材料准备等等）；
+如果是决算，1、就是决算地址确认、2 装修公司及装修方式确认、3目前装修节点确认，4决算流程（注意事项）</view>
+            </view>
+        </view>
+      </view>
+    </view>
+     <view class='viewBox'>
+      <view class='newTop'><view class="lineGreen"></view>验收节点</view>
+      <view class='newBox'>
+       <navigator url="../../view/setpass/setpass" class='lineHeightLine borderBottem' hover-class="weui-cell_active">
+      <view class="weui-flex">
+            <view class="weui-flex__item">
+            <view class="placeholder">开工交底<text>3.0</text></view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access">18/18</view>
+        </view>
+      </navigator>
+      <navigator url="../../view/setpass/setpass"  class='lineHeightLine borderBottem' hover-class="weui-cell_active">
+      <view class="weui-flex">
+            <view class="weui-flex__item">
+            <view class="placeholder">砌筑巡检<text>3.0</text></view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access">3/18</view>
+        </view>
+      </navigator>
+      <navigator url="../../view/setpass/setpass"   class='lineHeightLine' hover-class="weui-cell_active">
+      <view class="weui-flex">
+            <view class="weui-flex__item">
+            <view class="placeholder">砌筑巡检<text>3.0</text></view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access">0/18</view>
+        </view>
+      </navigator>
+      
+      </view>
+    </view>
+</view>
+</view>

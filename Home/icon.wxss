@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'iconfont';  /* project id 707796 */
-  src: url('//at.alicdn.com/t/font_707796_o26tti4h57.eot');
-  src: url('//at.alicdn.com/t/font_707796_o26tti4h57.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_707796_o26tti4h57.woff') format('woff'),
-  url('//at.alicdn.com/t/font_707796_o26tti4h57.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_707796_o26tti4h57.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_707796_23je6dhiif4.eot');
+  src: url('//at.alicdn.com/t/font_707796_23je6dhiif4.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_707796_23je6dhiif4.woff') format('woff'),
+  url('//at.alicdn.com/t/font_707796_23je6dhiif4.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_707796_23je6dhiif4.svg#iconfont') format('svg');
 }
 .iconfont {  
   font-family: "iconfont" !important;  
@@ -28,3 +28,5 @@
 .icon-fangwuxinxi:before { content: "\e60b"}
 .icon-location2:before { content: "\e611"}
 .icon-fangwumianji:before { content: "\e673"}
+.icon-jixiang:before { content: "\e770"}
+.icon-start:before { content: "\e639"}

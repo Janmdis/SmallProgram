@@ -1,0 +1,38 @@
+view{
+  font-size: 14px;
+  color: #a3a3a3;
+}
+.boxing{
+  display: inline-block;
+  float: right;width: 80%;
+}
+.imgSzie{
+  width: 142rpx;
+  height: 142rpx;
+  display: inline-block;
+  margin-left: 20px;
+}
+.clearfix:after{
+content:"";
+height:0;
+line-height:0;
+display:block;
+visibility:hidden;
+clear:both;
+}
+.clearfix{
+zoom:1;
+}
+.colorline{
+  height: 10px;
+  width: 2px;
+  display: inline-block;
+  margin-right: 10px;
+ 
+}
+.red{
+  background: #f90000;
+}
+.green{
+  background: #08c078;
+}

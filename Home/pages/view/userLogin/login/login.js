@@ -37,7 +37,7 @@ Page({
   },
   quickLogon:()=>{
     wx.navigateTo({
-      url:'../quickLogon/quickLogon'
+      url:'../userLogin/quickLogon/quickLogon'
     })
   },
   missCipher: () => {
@@ -47,7 +47,7 @@ Page({
   },
   login: () => {
     wx.switchTab({
-      url: '../orderOwner/orderOwner',
+      url: '../../orderOwner/orderOwner',
     })
   },
 })

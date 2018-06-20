@@ -1,0 +1,79 @@
+<view class="weui-panel weui-panel_access">
+  <view class="weui-panel__hd">水电工程</view>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_text">
+      <view>
+        <view class="listBoxs">
+          <icon type="success_no_circle" size="16"></icon>
+        </view>水电工程是否包含水电打孔？</view>
+      <view>
+        <view class="listBoxs">
+          <icon type="success_no_circle" size="16"></icon>
+        </view>水电工程是否包含水电打孔？</view>
+      <view>
+        <view class="listBoxs">
+          <icon type="success_no_circle" size="16"></icon>
+        </view>水电工程是否包含水电打孔？</view>
+    </view>
+
+  </view>
+</view>
+<view class="weui-panel weui-panel_access">
+  <view class="weui-panel__hd">是否有材料清单</view>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_text">
+      <view class="weui-flex">
+        <view class="weui-flex__item">
+          <view class="placeholder">
+            <view class="listBoxs">
+              <icon type="success_no_circle" size="16"></icon>
+            </view>weui</view>
+        </view>
+        <view class="weui-flex__item">
+          <view class="placeholder">
+            <view class="listBoxs">
+              <icon type="success_no_circle" size="16"></icon>
+            </view>weui</view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>
+<view class="weui-panel weui-panel_access">
+  <view class="weui-panel__hd">是否有材料清单</view>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_text">
+      <view class="weui-flex">
+        <view class="weui-flex__item">
+          <view class="placeholder">
+            <view class="listBoxs">
+              <icon type="success_no_circle" size="16"></icon>
+            </view>weui</view>
+        </view>
+        <view class="weui-flex__item">
+          <view class="placeholder">
+            <view class="listBoxs">
+              <icon type="success_no_circle" size="16"></icon>
+            </view>weui</view>
+        </view>
+        <view class="weui-flex__item">
+          <view class="placeholder">
+            <view class="listBoxs">
+              <icon type="success_no_circle" size="16"></icon>
+            </view>weui</view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>
+<view class="weui-panel weui-panel_access">
+  <view class="weui-panel__hd">其他</view>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_text">
+      <view class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</view>
+    </view>
+
+  </view>
+</view>

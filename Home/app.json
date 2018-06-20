@@ -1,21 +1,37 @@
 {
   "pages":[
-    "pages/view/login/login",
+    
+    "pages/view/presentationBox/wantAdd/wantAdd",
+    "pages/view/userLogin/login/login",
+    "pages/view/userLogin/perfectUser/perfectUser",
+    "pages/view/userLogin/quickLogon/quickLogon",
+    
+    
+    "pages/view/userLogin/missCipher/missCipher",
+    "pages/view/userLogin/userInfo/userInfo",
+    "pages/view/userLogin/setInfo/setInfo",
+    "pages/view/userLogin/setpass/setpass",
+
+    "pages/view/infoBox/comment/comment",
+    "pages/view/infoBox/orderDeil/orderDeil",
+    "pages/view/infoBox/info/info",
+
+    "pages/view/presentationBox/newLook/newLook",
+    "pages/view/presentationBox/supervisor/supervisor",
+    "pages/view/presentationBox/accompany/accompany",
+    "pages/view/presentationBox/associationReport/associationReport",
+    "pages/view/presentationBox/disclose/disclose",
+    "pages/view/presentationBox/presentation/presentation",
+    
+
     "pages/view/order_wait/order_wait",
-    "pages/view/orderOwner/orderOwner",
-    "pages/view/quickLogon/quickLogon",
-    "pages/view/missCipher/missCipher",
-    "pages/view/userInfo/userInfo",
-    "pages/view/setInfo/setInfo",
-    "pages/view/setpass/setpass",
-    "pages/view/perfectUser/perfectUser",
-    "pages/view/info/info"
+    "pages/view/orderOwner/orderOwner"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#11b786",
     "navigationBarTitleText": "净润家",
-    "navigationBarTextStyle":"#fff"
+    "navigationBarTextStyle":"#fff" 
   },
   "tabBar": {
     "color":"#6e6e6e",
@@ -31,15 +47,15 @@
         "text": "已接单"
       },
       {
-        "pagePath": "pages/view/orderOwner/orderOwner",
+        "pagePath": "pages/view/presentationBox/presentation/presentation",
         "text": "报告"
       },
       {
-        "pagePath": "pages/view/info/info",
+        "pagePath": "pages/view/infoBox/info/info",
         "text": "消息"
       },
       {
-        "pagePath": "pages/view/userInfo/userInfo",
+        "pagePath": "pages/view/userLogin/userInfo/userInfo",
         "text": "我的"
       }
     ]

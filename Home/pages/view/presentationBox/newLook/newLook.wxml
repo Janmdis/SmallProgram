@@ -1,0 +1,47 @@
+<view class="weui-panel weui-panel_access">
+  <view class="weui-panel__hd"><view class="colorline green"></view>开工交底3.0</view>
+  <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_text">
+          <view>业主姓名：旺旺</view>
+          <view>业主电话：15000898878</view>
+          <view>业主姓名：杭州闪电发货收款方舒服舒服视发送</view>
+      </view>
+      <view class="weui-media-box weui-media-box_text">
+           <view>管家姓名：旺旺</view>
+          <view>业主电话：15000898878</view>
+          <view>验收时间：2018-01-02 13:40</view>
+      </view>
+  </view>
+</view>
+<view class="weui-panel weui-panel_access">
+  <view class="weui-panel__hd"><view class="colorline green"></view>开工交底3.0</view>
+  <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_text">
+          <view>验收项目：房屋平整度XXX</view>
+          <view>验收方式：2m靠尺和塞尺</view>
+          <view >验收标准：{{'<'}}4mm</view>
+          <view>施工隐患: 房屋平整度XX</view>
+          <view>解决方案: 2m靠尺和塞尺</view>
+          <view>解决方法: {{'<'}}4mm</view>
+          <view class='clearfix'>管家提醒: <text class='boxing'>时代峰峻世纪东方老司机雷锋精神雷锋精神雷锋精神离开的飞机上了焦点分类世纪东方老师家访历史记录放家里说法就老实交代垃圾分类</text></view>
+      </view>
+      <view>
+        <image class="imgSzie" src='{{item.imgurl}}' wx:for='{{imglist}}'></image>
+      </view>
+  </view>
+</view>
+<view class="weui-panel weui-panel_access">
+  <view class="weui-panel__hd"><view class="colorline red"></view>验收不符合标准说明</view>
+  <view class="weui-panel__bd">
+      <view class="weui-media-box weui-media-box_text">
+          <view>验收项目：房屋平整度XXX</view>
+          <view>验收方式：2m靠尺和塞尺</view>
+          <view >验收标准：{{'<'}}4mm</view>
+          <view>施工隐患: 房屋平整度XX</view>
+          
+      </view>
+      <view>
+        <image class="imgSzie" src='{{item.imgurl}}' wx:for='{{imglist}}'></image>
+      </view>
+  </view>
+</view>

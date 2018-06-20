@@ -2,7 +2,7 @@
   <view class='userImf'>
     <view class='userBox'></view>
     <view class='boxImg'>
-      <image src='../../images/logo.png'></image>
+      <image src='../../../images/logo.png'></image>
     </view>
   </view>
   <view class='userText'  bindtap='goPerfect' >

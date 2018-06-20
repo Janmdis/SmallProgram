@@ -1,0 +1,15 @@
+<view>
+<view class="weui-flex" wx:for='{{list}}'>
+    <view><view class="placeholder">
+    <view class='imgBox'><image src='../../../images/logo.png'></image></view>
+    </view></view>
+    <view class="weui-flex__item"><view class="placeholder">
+    <view class='textGreen'>{{item.name}} {{item.phone}}</view>
+    <view><view class="iconfont icon-add"></view>  <text class='textSize'>{{item.add}}</text></view>
+    </view></view>
+    <view><view class="placeholder">
+    <button class='buttonSize'>陪签服务</button>
+    </view></view>
+</view>
+
+</view>

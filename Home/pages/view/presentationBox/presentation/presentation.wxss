@@ -1,0 +1,121 @@
+.weui-navbar__slider{
+  width: 4rem;
+  margin-left: 1rem;
+}
+.weui-tab__panel .leftBox{
+  width: 20%;
+  height: 100%;
+  float: left;
+  margin-bottom: -10000px;  
+  padding-bottom: 10000px; 
+}
+
+.weui-tab__panel .rightBox{
+ width: 78%;
+ height: 100%;
+ float: left;
+overflow-y:scroll;
+max-height:948rpx;
+padding-bottom: 10px;
+}
+.weui-tab__panel{
+  height: 100%;
+}
+.leftSize{
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  /* height: 100%; */
+}
+.leftSize view{
+  border-bottom: 1px dashed #ddd;
+  line-height: 40px;
+  color: #000;
+}
+.weui-tab__content{
+  height: 100%;
+  overflow: hidden;
+}
+.weui-tab__content:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+ view .sizeActive{
+  color: #11b786;
+}
+page,.page{
+  overflow: hidden;
+  height: 100%;
+}
+.weui-cell {
+  padding: 10px 5px;
+}
+.listBox{
+  border: 1px solid #ddd;
+  margin:4% 4.5%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.listBox:last-child{
+  margin:4% 4.5% 8% 4.5%;
+}
+.weui-cell__bd,.weui-cell__ft{
+  font-size: 12px;
+}
+.buttonSize{
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+}
+.listBoxmiddle:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.imgBox,.userInfoBox{
+  float: left;
+  font-size: 14px;
+}
+.weui-btn{
+  margin: 0;
+}
+.listBoxbottom{
+  line-height: 20px;
+}
+.imgBox{
+  width: 30%;
+  text-align: center;
+  line-height: 80px;
+  padding-top: 30px;
+}
+.userInfoBox{
+  width: 70%;
+   font-size: 12px;
+}
+.imgBox image{
+  width: 40px;
+  height: 40px;
+}
+.textOver{
+  width: 180px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
+}
+.linebox{
+  width: 2px;
+  height: 10px;
+  background: red;
+  display: inline-block;
+  margin: 0 4px;
+}
+.listBoxmiddle{
+  padding: 5px 0;
+  border-top:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+}
+.weui-cell{
+  padding: 5px 10px;
+}
+.textinfo{
+  font-size: 16px;
+  color: #11b786;
+}
+.textinfo text{
+  font-size: 12px;
+  
+}
+.iconfont{
+  display: inline-block;
+  margin-right: 5px;
+}

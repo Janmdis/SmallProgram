@@ -1,0 +1,11 @@
+view{
+  font-size: 14px;
+  color:#3f3f3f;
+}
+.weui-panel__hd{
+  color:#3f3f3f;
+}
+.listBoxs{
+  float: left;
+  width: 30px;
+}

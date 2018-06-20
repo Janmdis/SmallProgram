@@ -1,0 +1,29 @@
+<view class='mtop'>
+<view class="weui-cells weui-cells_after-title">
+    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">订单编号：</view>
+        <view class="weui-cell__bd">293599505</view>
+        <view class="weui-cell__ft">全程监理服务</view>
+    </navigator>
+    <navigator class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">专业程度：</view>
+        <view class="weui-cell__bd">非常好</view>
+        
+    </navigator>
+    <navigator  class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">专业程度：</view>
+        <view class="weui-cell__bd">很好</view>
+    </navigator>
+       <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+            <view class="weui-cell__bd">业主的评价：</view>
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" 
+                    placeholder="请输入文本"
+                    value="kldjljljfslkjflsjflsjflsjflssdfsdfsfsdfsdfsdfsdfsfsfs" 
+                    style="height: 3.3em" />
+                </view>
+            </view>
+        </view>
+</view>
+</view>
