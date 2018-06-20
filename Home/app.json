@@ -1,7 +1,6 @@
 {
   "pages":[
     
-    "pages/view/presentationBox/wantAdd/wantAdd",
     "pages/view/userLogin/login/login",
     "pages/view/userLogin/perfectUser/perfectUser",
     "pages/view/userLogin/quickLogon/quickLogon",
@@ -16,6 +15,7 @@
     "pages/view/infoBox/orderDeil/orderDeil",
     "pages/view/infoBox/info/info",
 
+    "pages/view/presentationBox/wantAdd/wantAdd",
     "pages/view/presentationBox/newLook/newLook",
     "pages/view/presentationBox/supervisor/supervisor",
     "pages/view/presentationBox/accompany/accompany",
@@ -24,8 +24,9 @@
     "pages/view/presentationBox/presentation/presentation",
     
 
-    "pages/view/order_wait/order_wait",
+    "pages/view/orderWait/orderWait",
     "pages/view/orderOwner/orderOwner"
+
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -39,24 +40,34 @@
     "backgroundColor":"#ffffff",
     "list": [
       {
-        "pagePath": "pages/view/order_wait/order_wait",
-        "text": "待结单"
+        "pagePath": "pages/view/orderWait/orderWait",
+        "text": "待结单",
+        "iconPath":"pages/images/icon/order1_common.png",
+        "selectedIconPath":"pages/images/icon/order1_selected.png"
       },
       {
         "pagePath": "pages/view/orderOwner/orderOwner",
-        "text": "已接单"
+        "text": "已接单",
+        "iconPath": "pages/images/icon/order2_common.png",
+        "selectedIconPath": "pages/images/icon/order2_selected.png"
       },
       {
         "pagePath": "pages/view/presentationBox/presentation/presentation",
-        "text": "报告"
+        "text": "报告",
+        "iconPath": "pages/images/icon/order3_common.png",
+        "selectedIconPath": "pages/images/icon/order3_selected.png"
       },
       {
         "pagePath": "pages/view/infoBox/info/info",
-        "text": "消息"
+        "text": "消息",
+        "iconPath": "pages/images/icon/order4_common.png",
+        "selectedIconPath": "pages/images/icon/order4_selected.png"
       },
       {
         "pagePath": "pages/view/userLogin/userInfo/userInfo",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "pages/images/icon/order5_common.png",
+        "selectedIconPath": "pages/images/icon/order5_selected.png"
       }
     ]
   }

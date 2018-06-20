@@ -5,6 +5,7 @@
   url('//at.alicdn.com/t/font_707796_23je6dhiif4.woff') format('woff'),
   url('//at.alicdn.com/t/font_707796_23je6dhiif4.ttf') format('truetype'),
   url('//at.alicdn.com/t/font_707796_23je6dhiif4.svg#iconfont') format('svg');
+
 }
 .iconfont {  
   font-family: "iconfont" !important;  
@@ -30,3 +31,4 @@
 .icon-fangwumianji:before { content: "\e673"}
 .icon-jixiang:before { content: "\e770"}
 .icon-start:before { content: "\e639"}
+.icon-jiantou:before { content: "\e65e"}

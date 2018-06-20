@@ -49,6 +49,23 @@
           </view>
         </view>
       </view>
+      <view class='btngroup'>
+          <button class='prime'>立即接单</button>
+          <button class='warn' catchtap='changeshow'>放弃接单</button>
+      </view>
     </view>
   </scroll-view>
+  <view class="overback" hidden='{{showcancle}}' catchtap='changeshow' id='overback'>
+    <view class='dialog'>
+        <view class='header'>确认拒绝订单？</view>
+        <view class='dialog-content'>
+            <textarea class="weui-textarea" placeholder="请输入放弃原因" />
+        </view>
+        <view class='btngroup'>
+            <view  class="certain" catchtap='giveupOrder'>确认</view>
+            <view id='cancle' class="cancle" catchtap='changeshow'>取消</view>
+        </view>
+    </view>
+     
+  </view>
 </view>
