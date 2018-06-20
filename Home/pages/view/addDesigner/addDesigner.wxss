@@ -1,0 +1,11 @@
+.newBox{
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+}
+view{
+  font-size: 14px;
+  line-height: 80rpx;
+}
+.weui-cell__bd{
+  text-align: right;
+}

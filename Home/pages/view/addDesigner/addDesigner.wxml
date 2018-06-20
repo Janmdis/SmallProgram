@@ -1,0 +1,22 @@
+
+<view class="weui-cells weui-cells_after-title">
+    
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd ">
+            <view class="newBox">装修公司名称(必填)</view>
+        </view>
+        <view class="weui-cell__bd">
+            <picker bindchange="bindCountryChange" value="{{countryIndex}}" range="{{countries}}">
+                <view class="weui-select weui-select_in-select-after">{{countries[countryIndex]!=null?countries[countryIndex]:'具体是那个分公司'}}</view>
+            </picker>
+        </view>
+    </view>
+</view>
+<view class="weui-cells__title"></view>
+<view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd ">
+            <view class="newBox">装修公司名称(必填)</view>
+        </view>
+    </view>
+</view>
