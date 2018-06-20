@@ -117,7 +117,7 @@ Page({
   toDetails(event) {
     console.log(111);
     wx.navigateTo({
-      url: '../orderDetails/orderDetails',
+      url: '../details/details',
     })
   }
 })

@@ -7,28 +7,28 @@ Page({
   data: {
     imglist:[
       {
-        src:'../../images/ok.png'
+        src:'../../../images/ok.png'
       },
       {
-        src: '../../images/ok.png'
+        src: '../../../images/ok.png'
       },
       {
-        src: '../../images/ok.png'
+        src: '../../../images/ok.png'
       },
       {
-        src: '../../images/ok.png'
+        src: '../../../images/ok.png'
       },
       {
-        src: '../../images/ok.png'
+        src: '../../../images/ok.png'
       },
       {
-        src: '../../images/ok.png'
+        src: '../../../images/ok.png'
       },
       {
-        src: '../../images/ok.png'
+        src: '../../../images/ok.png'
       },
       {
-        src: '../../images/ok.png'
+        src: '../../../images/ok.png'
       }
     ],
     src_bingimg:'',

@@ -38,17 +38,7 @@
             <text>{{orderdetail.remark}}</text>
         </view>
     </view>
-    <!--我接单详情部分  -->
-    <view wx:if='isorderwait'>
-        <view class='titles'>
-            <text class='flag'>验收节点</text>
-        </view>
-        <view>
-            <view class='nodecontent' wx:for='{{acceptnodes}}' wx:key='index'>{{item}}<text class='flag_jt'>18/18 <text class='iconfont icon-jiantou' style=''></text></text></view>
-        </view>
-    </view>
-    <!--已接单详情部分  -->
-    <view style='position:relative;' wx:if='{{isorderowner}}'>
+    <view style='position:relative;'>
         <view class="weui-navbar">
             <block wx:for="{{tabs}}" wx:key="*this">
                 <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
@@ -63,11 +53,20 @@
             </view>
         </view>
     </view>
-    <view class='btngroup' wx:if='{{false}}'>
-        <button class="weui-btn" type="primary">立即派单</button>
-    </view>
-    <view class='btngroup weui-flex' wx:if='{{true}}'>
-        <button class="weui-btn weui-flex__item" type="warn">申请放弃派单</button>
+    <view class='btns weui-flex'>
+        <button class="weui-btn weui-flex__item" type="warn" bindtap='changeshow'>申请放弃派单</button>
         <button class="weui-btn weui-flex__item" type="primary">立即派单</button>
+    </view>
+    <view class="overback" hidden='{{showcancle}}' catchtap='changeshow' id='overback'>
+      <view class='dialog'>
+          <view class='header'>确认拒绝订单？</view>
+          <view class='dialog-content'>
+              <textarea class="weui-textarea" placeholder="请输入放弃原因" />
+          </view>
+          <view class='btngroup'>
+              <view  class="certain" catchtap='giveupOrder'>确认</view>
+              <view id='cancle' class="cancle" catchtap='changeshow'>取消</view>
+          </view>
+      </view>
     </view>
 </view>

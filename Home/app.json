@@ -1,13 +1,13 @@
 {
   "pages":[
-<<<<<<< HEAD
-=======
-    "pages/view/orderDetails/orderDetails",
-    "pages/view/reportAccept/reportAccept",
-    "pages/view/login/login",
-    "pages/view/orderWait/orderWait",
-    "pages/view/orderOwner/orderOwner",
->>>>>>> 48ec4b469ac1c722cad9a505c540c49259ad6e06
+    
+    "pages/view/orderWait/list/list",
+    "pages/view/orderWait/details/details",
+    "pages/view/orderWait/reportAccept/reportAccept",
+
+    "pages/view/orderOwner/list/list",
+    "pages/view/orderOwner/details/details",
+    
     
     "pages/view/userLogin/login/login",
     "pages/view/userLogin/perfectUser/perfectUser",
@@ -29,11 +29,8 @@
     "pages/view/presentationBox/accompany/accompany",
     "pages/view/presentationBox/associationReport/associationReport",
     "pages/view/presentationBox/disclose/disclose",
-    "pages/view/presentationBox/presentation/presentation",
+    "pages/view/presentationBox/presentation/presentation"
     
-
-    "pages/view/orderWait/orderWait",
-    "pages/view/orderOwner/orderOwner"
 
   ],
   "window":{
@@ -48,13 +45,13 @@
     "backgroundColor":"#ffffff",
     "list": [
       {
-        "pagePath": "pages/view/orderWait/orderWait",
+        "pagePath": "pages/view/orderWait/list/list",
         "text": "待结单",
         "iconPath":"pages/images/icon/order1_common.png",
         "selectedIconPath":"pages/images/icon/order1_selected.png"
       },
       {
-        "pagePath": "pages/view/orderOwner/orderOwner",
+        "pagePath": "pages/view/orderOwner/list/list",
         "text": "已接单",
         "iconPath": "pages/images/icon/order2_common.png",
         "selectedIconPath": "pages/images/icon/order2_selected.png"
