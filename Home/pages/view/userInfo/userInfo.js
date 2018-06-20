@@ -34,6 +34,11 @@ Page({
    */
   onHide: function () {
 
-  }
+  },
+  goPerfect: () => {
+    wx.navigateTo({
+      url: '../perfectUser/perfectUser',
+    })
+  },
   
 })

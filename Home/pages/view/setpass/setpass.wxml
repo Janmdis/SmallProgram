@@ -1,0 +1,43 @@
+<view class='mtop'>
+<view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">旧密码</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请输入旧密码"/>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">新密码</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请输入新密码"/>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+            <view class="weui-label">确认密码</view>
+        </view>
+        <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请输入确认密码"/>
+        </view>
+    </view>
+     
+</view>
+    <view class='buttonWidth'>
+      <button class="weui-btn">确认修改</button>
+    </view>
+</view>
+<view class='isOk'>
+    <view class='isOkImg'>
+        <image src='../../images/ok.png'></image>
+    </view>
+    <view>
+        <text>修改密码成功,请重新登录30s</text>
+    </view>
+    <view class='buttonWidth'>
+      <button class="weui-btn">确认修改</button>
+    </view>
+</view>

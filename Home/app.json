@@ -1,13 +1,16 @@
 {
   "pages":[
-    "pages/view/orderDetails/orderDetails",
-    "pages/view/order_wait/order_wait",
+    "pages/view/orderWait/orderWait",
     "pages/view/orderOwner/orderOwner",
+    "pages/view/orderDetails/orderDetails",
+    
     "pages/view/quickLogon/quickLogon",
     "pages/view/missCipher/missCipher",
     "pages/view/userInfo/userInfo",
-    "pages/view/setInfo/setInfo"
-    
+    "pages/view/setInfo/setInfo",
+    "pages/view/setpass/setpass",
+    "pages/view/perfectUser/perfectUser",
+    "pages/view/info/info"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -21,7 +24,7 @@
     "backgroundColor":"#ffffff",
     "list": [
       {
-        "pagePath": "pages/view/order_wait/order_wait",
+        "pagePath": "pages/view/orderWait/orderWait",
         "text": "待结单",
         "iconPath":"pages/images/icon/order1_common.png",
         "selectedIconPath":"pages/images/icon/order1_selected.png"

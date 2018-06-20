@@ -3,23 +3,24 @@
   font-size:25rpx;
   color:#757575;
   background-color: #f5f5f5;
-  
 }
 .orderdetail>view{
-  padding: 10rpx 20rpx;
+  padding: 10rpx 0rpx;
   background-color: #fff;
   overflow: hidden;
-  margin-bottom:20rpx;
+  margin-bottom:15rpx;
 }
 .orderdetail .number{
   float: left;
-  border-left:5rpx #30bc8f solid;
-  border-bottom:1rpx #f5f5f5 solid;
 }
 .orderdetail .titles{
+  padding:0rpx 20rpx 10rpx 20rpx;
+  border-bottom: 1rpx #f5f5f5 solid;
+}
+.orderdetail  .flag{
+  width:5rpx;
+  height:5rpx;
   border-left:5rpx #30bc8f solid;
-  border-bottom:1rpx #f5f5f5 solid;
-  padding-bottom: 10rpx;
   padding-left: 10rpx;
 }
 .orderdetail .red{
@@ -28,4 +29,84 @@
 .orderdetail .servicename{
   float: right;
   color:#30bc8f;
+}
+.orderdetail .content_detail{
+  padding:10rpx 40rpx;
+}
+.orderdetail .content_detail>view{
+  clear: both;
+  width:100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 10rpx 0rpx;
+}
+.orderdetail .half{
+  width:50%;
+  float: left;
+}
+.selectlist{
+  width:40%;
+  height:35rpx;
+  min-height:0rpx;
+  float: right;
+  border:1px #cccccc solid;
+  margin-right:35rpx;
+  padding:0 20rpx;
+  border-radius: 10rpx;
+}
+.switch{
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid #f5f5f5;
+}
+.switch>view{
+  text-align: center;
+}
+.weui-navbar__title{
+  font-size: 25rpx;
+}
+.weui-navbar__item{
+  padding:20rpx 0rpx;
+}
+.weui-tab__panel{
+  padding:80rpx 40rpx 0rpx 40rpx !important;
+}
+.weui-navbar__slider{
+  width:250rpx;
+  height:5rpx;
+}
+.switchlist{
+  padding:10rpx 20rpx;
+  border-bottom:1rpx solid #f5f5f5;
+}
+.flag_jt{
+  position: absolute;
+  right:40rpx;
+  font-size:30rpx;
+}
+.nodecontent{
+  padding:10rpx 40rpx;
+  border-bottom:1rpx solid #f5f5f5;
+}
+.nodecontent .flag_jt{
+  margin-top:-10rpx;
+}
+.btngroup{
+   margin-top:100rpx;
+   position: fixed;
+   bottom:0rpx;
+   width:100%;
+   margin-bottom: 0rpx !important;
+   padding-bottom: 0rpx !important;
+}
+.btngroup .weui-btn{
+  font-size:30rpx;
+  border-radius: 0;
+  margin-top:0rpx;
+}
+.weui-btn[type='primary']{
+  background-color: #11b786;
+}
+.weui-btn[type='warn']{
+  background-color: #d7434d;
 }
