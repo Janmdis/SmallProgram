@@ -1,5 +1,13 @@
 {
   "pages":[
+<<<<<<< HEAD
+=======
+    "pages/view/orderDetails/orderDetails",
+    "pages/view/reportAccept/reportAccept",
+    "pages/view/login/login",
+    "pages/view/orderWait/orderWait",
+    "pages/view/orderOwner/orderOwner",
+>>>>>>> 48ec4b469ac1c722cad9a505c540c49259ad6e06
     
     "pages/view/userLogin/login/login",
     "pages/view/userLogin/perfectUser/perfectUser",
