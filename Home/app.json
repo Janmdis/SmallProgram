@@ -1,8 +1,8 @@
 {
   "pages":[
     "pages/view/addDesigner/addDesigner",
-    "pages/view/orderDetails/orderDetails",
-    "pages/view/reportAccept/reportAccept",
+  
+  
 
     
     "pages/view/userLogin/login/login",
@@ -25,11 +25,9 @@
     "pages/view/presentationBox/accompany/accompany",
     "pages/view/presentationBox/associationReport/associationReport",
     "pages/view/presentationBox/disclose/disclose",
-    "pages/view/presentationBox/presentation/presentation",
-    
+    "pages/view/presentationBox/presentation/presentation"
 
-    "pages/view/orderWait/orderWait",
-    "pages/view/orderOwner/orderOwner"
+
 
   ],
   "window":{

@@ -16,7 +16,8 @@
 <view class="weui-cells weui-cells_after-title">
     <view class="weui-cell weui-cell_select">
         <view class="weui-cell__hd ">
-            <view class="newBox">装修公司名称(必填)</view>
+            <view class="newBox">(必填)</view>
         </view>
+
     </view>
 </view>
