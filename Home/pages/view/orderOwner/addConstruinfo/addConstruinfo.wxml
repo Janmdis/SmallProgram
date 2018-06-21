@@ -1,0 +1,83 @@
+<view class='constructioninfo'>
+    <view>
+        <view class='titles'><text class='flag'>装修公司名称(必填）</text></view>
+        <view class='content_detail'>
+           <view>
+              <view class='name'>装修公司名称：</view>
+              <input  />
+           </view>
+        </view>
+    </view> 
+    <view>
+        <view class='titles'><text class='flag'>装修信息(必填）</text></view>
+        <view class='content_detail'>
+           <view class='half'>
+              <view class='name'>工期：</view>
+              <input  placeholder='*个月' placeholder-style='color:#cccccc;'  />
+           </view>
+           <view class='half'>
+              <picker style='position:relative;' bindchange="bindPickerChange" value="{{renovationIndex}}" range="{{typelist_renovation}}">
+                  <view class="picker">
+                    装修方式：{{typelist_renovation[renovationIndex]}}
+                  </view>
+                  <view class='borderstyle'></view>
+                </picker>
+           </view>
+        </view>
+    </view> 
+    <view>
+        <view class='titles'><text class='flag'>项目经理(选填）</text></view>
+        <view class='content_detail'>
+          <view class='half'>
+              <view class='name'>姓名：</view>
+              <input  placeholder='填写姓名' placeholder-style='color:#cccccc;'  />
+          </view>
+          <view class='half'>
+            <view class='name'>联系方式：</view>
+            <input  placeholder='填写电话' placeholder-style='color:#cccccc;'  />
+          </view>
+        </view>
+    </view> 
+    <view>
+        <view class='titles'><text class='flag'>工人信息(选填）</text></view>
+        <view class='content_detail'>
+          <view style='margin-bottom:10rpx;overflow:hidden;border-bottom:1px solid #f5f5f5;'>
+              <view class='half'>
+                  <view class='name'>姓名：</view>
+                  <input  placeholder='填写姓名' placeholder-style='color:#cccccc;'  />
+              </view>
+              <view class='half'>
+                <view class='name'>联系方式：</view>
+                <input  placeholder='填写电话' placeholder-style='color:#cccccc;'  />
+              </view>
+          </view>
+          <view style='margin-bottom:10rpx;overflow:hidden;border-bottom:1px solid #f5f5f5;'>
+              <view class='half'>
+                  <view class='name'>人工费：</view>
+                  <input  placeholder='0' placeholder-style='color:#cccccc;'  />
+              </view>
+              <view class='half'>
+                  <picker style='position:relative;' bindchange="bindPickerChange" value="{{priceIndex}}" range="{{typelist_price}}">
+                      <view class="picker">
+                        计价方式：{{typelist_price[priceIndex]}}
+                      </view>
+                      <view class='borderstyle'></view>
+                    </picker>
+              </view>
+          </view>
+          <view>
+              <view class='half'>
+                  <picker style='position:relative;' bindchange="bindPickerChange" value="{{workerIndex}}" range="{{typelist_worker}}">
+                      <view class="picker">
+                        工种：{{typelist_worker[workerIndex]}}
+                      </view>
+                      <view class='borderstyle' style='width:78%'></view>
+                    </picker>
+              </view>
+          </view>
+        </view>
+    </view> 
+    <view class='btngroup'>
+        <button class="weui-btn" type="primary">提交</button>
+    </view>
+</view>

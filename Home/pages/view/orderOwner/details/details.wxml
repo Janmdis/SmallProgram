@@ -16,7 +16,8 @@
            </view>
         </view>
     </view> 
-    <view>
+    <!--陪签服务房屋信息  -->
+    <view wx:if='{{ispq}}'>
         <view class='titles'><text class='flag'>房屋信息</text></view>
         <view class='content_detail'>
             <view style='border-bottom:1rpx #f5f5f5 solid;'>
@@ -25,8 +26,60 @@
             </view>
             <view>
                 <view class='half'>预约时间：{{orderdetail.date_service}}</view>
-                <view class='half'>装修类型：<input bindtap='selectrenovationtype' value='{{orderdetail.type_renovation}}' class='selectlist' />  </view>
-                
+                <view class='half'>
+                  <picker style='position:relative;' bindchange="bindPickerChange" value="{{renovationIndex}}" range="{{typelist_renovation}}">
+                    <view class="picker">
+                      装修类型：{{typelist_renovation[renovationIndex]}}
+                    </view>
+                    <view class='borderstyle'></view>
+                  </picker>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!--监理服务房屋信息  -->
+    <view wx:if='{{isjl}}'>
+        <view class='titles'><text class='flag'>房屋信息</text></view>
+        <view class='content_detail'>
+            <view style='border-bottom:1rpx #cccccc solid;'>
+                <view class='half'>房屋类型：{{orderdetail.type_house}}</view>
+                <view class='half'>房屋面积：{{orderdetail.area_house}}㎡</view>
+            </view>
+            <view style='border-bottom:1rpx #cccccc solid;'>
+                <view class='half'>
+                  <picker style='position:relative;' bindchange="bindPickerChange_currentnode" value="{{nodescurrentIndex}}" range="{{nodes_current}}">
+                    <view class="picker">
+                      当前节点：{{nodes_current[nodescurrentIndex]}}
+                    </view>
+                    <view class='borderstyle'></view>
+                  </picker>
+                </view>
+                <view class='half'>
+                  <picker style='position:relative;'  mode="date" bindchange="bindDatechange_currentnode" value="{{date_currentnode}}" >
+                    <view class="picker">
+                      <text class='iconfont icon-rili'></text>：{{date_currentnode}}
+                    </view>
+                    <view class='borderstyle' style='left:50rpx;width:70%'></view>
+                  </picker>
+                </view>
+            </view>
+            <view style='border-bottom:1rpx #cccccc solid;'>
+                <view class='half'>
+                  <picker style='position:relative;' bindchange="bindPickerChange_nextnode" value="{{nodesnextIndex}}" range="{{nodes_next}}">
+                    <view class="picker">
+                      下个节点：{{nodes_next[nodesnextIndex]}}
+                    </view>
+                    <view class='borderstyle'></view>
+                  </picker>
+                </view>
+                <view class='half'>
+                  <picker style='position:relative;'  mode="date" bindchange="bindDatechange_nextnode" value="{{date_nextnode}}" >
+                    <view class="picker">
+                      <text class='iconfont icon-rili'></text>：{{date_nextnode}}
+                    </view>
+                    <view class='borderstyle' style='left:50rpx;width:70%'></view>
+                  </picker>
+                </view>
             </view>
         </view>
     </view>
