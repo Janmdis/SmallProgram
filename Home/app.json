@@ -1,6 +1,6 @@
 {
   "pages":[
-    "pages/view/orderOwner/addConstruinfo/addConstruinfo",
+    
     
     "pages/view/orderWait/list/list",
     "pages/view/orderWait/details/details",
@@ -13,9 +13,9 @@
     "pages/view/orderOwner/subprojScan/subprojScan",
     "pages/view/orderOwner/details/details",
     "pages/view/orderOwner/addBasicinfo/addBasicinfo",
-    
-    
-    
+    "pages/view/orderOwner/addConstruinfo/addConstruinfo",
+
+    "pages/view/addDesigner/addDesigner",
     
     "pages/view/userLogin/login/login",
     "pages/view/userLogin/perfectUser/perfectUser",
@@ -38,7 +38,8 @@
     "pages/view/presentationBox/associationReport/associationReport",
     "pages/view/presentationBox/disclose/disclose",
     "pages/view/presentationBox/presentation/presentation"
-    
+
+
 
   ],
   "window":{
