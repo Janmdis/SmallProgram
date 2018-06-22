@@ -1,0 +1,149 @@
+/* pages/view/orderDetails/orderDetails.wxss */
+.reportaccept{
+  font-size:25rpx;
+  color:#757575;
+  background-color: #f5f5f5;
+  padding-bottom: 50rpx;
+}
+.reportaccept>view{
+  padding: 10rpx 0rpx;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom:15rpx;
+}
+.reportaccept .wordhidden{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.reportaccept .titles{
+  padding:0rpx 20rpx 10rpx 20rpx;
+  border-bottom: 1rpx #f5f5f5 solid;
+}
+.reportaccept  .flag{
+  width:5rpx;
+  height:5rpx;
+  border-left:5rpx #30bc8f solid;
+  padding-left: 10rpx;
+}
+.reportaccept .flag_red{
+  border-left-color: red;
+}
+.reportaccept .red{
+  color:red;
+}
+.reportaccept .servicename{
+  float: right;
+  color:#30bc8f;
+}
+.reportaccept .content_detail{
+  padding:10rpx 40rpx;
+}
+.reportaccept .content_detail .line-content{
+  overflow: hidden;
+}
+.reportaccept .content_detail .title{
+  width:120rpx;
+  float: left;
+}
+.reportaccept .content_detail .content{
+  width:550rpx;
+  float: left;
+}
+.reportaccept .content_detail>view{
+  clear: both;
+  width:100%;
+  
+  padding: 10rpx 0rpx;
+}
+.reportaccept .half{
+  width:50%;
+  float: left;
+}
+.selectlist{
+  width:40%;
+  height:35rpx;
+  min-height:0rpx;
+  float: right;
+  border:1px #cccccc solid;
+  margin-right:35rpx;
+  padding:0 20rpx;
+  border-radius: 10rpx;
+}
+.switch{
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid #f5f5f5;
+}
+.switch>view{
+  text-align: center;
+}
+.weui-navbar__title{
+  font-size: 25rpx;
+}
+.weui-navbar__item{
+  padding:20rpx 0rpx;
+}
+.weui-tab__panel{
+  padding:80rpx 40rpx 0rpx 40rpx !important;
+}
+.weui-navbar__slider{
+  width:250rpx;
+  height:5rpx;
+}
+.switchlist{
+  padding:10rpx 20rpx;
+  border-bottom:1rpx solid #f5f5f5;
+}
+.flag_jt{
+  position: absolute;
+  right:40rpx;
+  font-size:30rpx;
+}
+.nodecontent{
+  padding:10rpx 40rpx;
+  border-bottom:1rpx solid #f5f5f5;
+}
+.nodecontent .flag_jt{
+  margin-top:-10rpx;
+}
+.btngroup{
+   margin-top:100rpx;
+   position: fixed;
+   bottom:0rpx;
+   width:100%;
+   margin-bottom: 0rpx !important;
+   padding-bottom: 0rpx !important;
+}
+.btngroup .weui-btn{
+  font-size:30rpx;
+  border-radius: 0;
+  margin-top:0rpx;
+}
+.weui-btn[type='primary']{
+  background-color: #11b786;
+}
+.weui-btn[type='warn']{
+  background-color: #d7434d;
+}
+.imglist{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.imgs{
+  width:156rpx;
+  height: 160rpx;
+  margin-right: 10rpx;
+  margin-bottom: 10rpx;
+  background-color: #eeeeee;
+}
+.overback{
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: #fff; 
+}

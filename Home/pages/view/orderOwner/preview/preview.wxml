@@ -1,0 +1,74 @@
+<view class='reportaccept'>
+    <view>
+         <view class='titles'><text class='flag'>开工交底3.0</text></view>
+         <view class='content_detail'>
+            <view style='border-bottom:1rpx solid #f5f5f5'>
+                <view class='line-content'>
+                    <view class='title'>业主姓名：</view>
+                    <view class='content'>测试</view>
+                </view>
+                <view class='line-content'>
+                    <view class='title'>业主电话：</view>
+                    <view class='content'>15058160069</view>
+                </view>
+                <view class='line-content'>
+                    <view class='title'>验收地址：</view>
+                    <view class='content wordhidden'>上海浦东上海浦东上海浦东上海浦东上海浦东上海浦东上海浦东上海浦东上海浦东上海浦东上海浦东上海浦东上海浦东上海浦东</view>
+                </view>
+            </view>
+            <view>
+                <view class='line-content'>
+                    <view class='title'>管家姓名：</view>
+                    <view class='content'>测试</view>
+                </view>
+                <view class='line-content'>
+                    <view class='title'>管家电话：</view>
+                    <view class='content'>15058160069</view>
+                </view>
+                <view class='line-content'>
+                    <view class='title'>验收事件：</view>
+                    <view class='content'>2018-12-12 12:00</view>
+                </view>
+            </view>
+         </view>
+    </view>
+    <view>
+        <view class='titles'><text class='flag flag_red'>验收不符合标准说明</text></view>
+        <view class='content_detail'>
+            <view class='line-content'>
+                <view class='title'>验收项目：</view>
+                <view class='content'>房屋平整度</view>
+            </view>
+            <view class='line-content'>
+                <view class='title'>验收方式：</view>
+                <view class='content'>2m靠尺和塞尺</view>
+            </view>
+            <view class='line-content'>
+                <view class='title'>验收标准：</view>
+                <view class='content'>&lt;4mm</view>
+            </view>
+            <view class='line-content'>
+                <view class='title'>施工隐患：</view>
+                <view class='content'>房屋平整度</view>
+            </view>
+            <view class='line-content'>
+                <view class='title'>解决方案：</view>
+                <view class='content'>房屋平整度</view>
+            </view>
+            <view class='line-content'>
+                <view class='title'>解决方法：</view>
+                <view class='content'>房屋平整度</view>
+            </view>
+            <view class='line-content'>
+                <view class='title'>管家提醒：</view>
+                <view class='content'>房屋平整度房屋平整度房屋平整度房屋平整度房屋平整度房屋平整度房屋平整度</view>
+            </view>
+            <view  class='imglist'>
+                <image class='imgs' wx:for="{{imglist}}" data-src='{{item.src}}'  mode="scaleToFill" src="{{item.src}}" bindtap='enlarge'></image>
+            </view>
+        </view>
+    </view> 
+    <view class='overback' hidden='{{bigimghidden}}' bindtap='hideBigimg'>
+      <image src="{{src_bingimg}}" mode='aspectFit'></image>
+    </view>
+</view>
