@@ -1,0 +1,14 @@
+
+<view class="weui-panel weui-panel_access">
+  <view class="weui-panel__hd"></view>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_text">
+     <textarea class="weui-textarea" placeholder="其他注意事项" style="height: 6.3em;background:#ddd;" />
+    </view>
+
+  </view>
+</view>
+
+<view class="weui-btn-area">
+     <button class="weui-btn"  bindtap="showTopTips">确定</button>
+</view>

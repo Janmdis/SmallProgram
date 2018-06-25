@@ -9,3 +9,36 @@ view{
 .weui-cell__bd{
   text-align: right;
 }
+.msize{
+  display: inline-block;
+  font-size: 12px;
+  color: #7e7e7e;
+  padding-left: 6px;
+}
+.weui-input{
+  text-align: left;
+}
+.weui-label{
+  width: auto;
+}
+.lineBox{
+  width: 3px;
+  height: 12px;
+  background: #11b786;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  top:2px;
+}
+.weui-btn-area{
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  margin:0;
+  padding: 0; 
+}
+.weui-btn-area button{
+border-radius: 0;
+background: #11b786;
+color: #fff;
+}

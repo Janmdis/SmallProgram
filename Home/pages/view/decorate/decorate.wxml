@@ -1,0 +1,157 @@
+
+<view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd ">
+            <view class="newBox"><view class='lineBox'></view>基础信息<view  class="msize"></view></view>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd " style='width:auto;'>
+            <view class="weui-cell weui-cell_input" >
+                <view class="weui-cell__hd" style='width:40%;'>
+                    <view class="weui-label">装修公司：</view>
+                </view>
+                <view class="weui-cell__bd" >
+                    <input class="weui-input"  placeholder="请输公司信息" value="{{commpontName}}"/>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd " style='width:auto;'>
+           <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd" style='width:40%;'>
+                    <view class="weui-label">陪签日期：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入电话号码" value="{{signDate}}"/>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd ">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">装修风格：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入qq" value="{{dectype}}"/>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cell__hd ">
+           <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">装修类型：</view>
+                </view>
+                <picker class='inputsize' bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+                    <view class="weui-input " >{{countryCodes[countryCodeIndex]}}</view>
+                </picker>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd ">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">户  型：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入户型" value="{{household}}"/>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cell__hd ">
+           <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">面  积：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入面积" value="{{measure}}"/>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd ">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">原 报 价：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入原报价" value="{{offer}}"/>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cell__hd ">
+           <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">合 同 价：</view>
+                </view>
+                
+                    <picker class='inputsize' bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+                        <view class="weui-input " >{{countryCodes[countryCodeIndex]}}</view>
+                        <text style='position:absolute; top:0;right:15%'>10万</text>
+                    </picker>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">设 计 费：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入设计费"  value="{{Design}}"/>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cell__hd ">
+           <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">管理费率：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入管理费" value="{{Administration}}"/>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd ">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">直 接 费：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入直接费" value="{{direct}}"/>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cell__hd ">
+           <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label" style="width:100px;">项目经理工资：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入电话号码" value="{{project}}"/>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="weui-cells__title csize sizeColor">*以上都属于必填，没有可以写无</view>
+<view class="weui-panel weui-panel_access">
+  <view class="weui-panel__hd csize lineafte">备注</view>
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_text">
+     <textarea class="weui-textarea" placeholder="其他备注" style="height: 6.3em;background:#ddd;" />
+    </view>
+
+  </view>
+</view>
+<view class="weui-btn-area">
+    <button class="weui-btn" >确定</button>
+</view>

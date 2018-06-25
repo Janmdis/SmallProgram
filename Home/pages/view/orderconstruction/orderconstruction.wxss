@@ -1,0 +1,60 @@
+view{
+  font-size: 12px;
+  color:#3f3f3f;
+}
+.weui-panel__hd{
+  color:#3f3f3f;
+}
+.listBoxs{
+  float: left;
+  width: 30px;
+}
+.weui-cell__ft {
+  width: 40px;
+  text-align: center;
+}
+.newSzie{
+  border: none;
+  width: 40%;
+  float: left;
+  line-height: 40px;
+}
+.newcheckSzie{
+  float: left;
+  line-height: 40px;
+  padding-top: 6px;
+}
+.newWidth{
+  width:47.5%;
+  float: left;
+  line-height: 40px;
+  min-height: 40px;
+  border-bottom: 1px solid #ddd;
+}
+.bodymg{
+  margin-left: 5%;
+}
+.leftBox{
+  float: left;
+  width: 40px;
+  height: 40px;
+  line-height: 50px;
+  margin-left: 20px;
+  text-align: center
+}
+.weui-textarea{
+  border-radius: 5px;
+  padding: 10px;
+  width: 95%;
+}
+.weui-btn-area{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+.weui-btn-area button{
+ background: #11b786;
+ color: #fff;
+ border-radius: 0;
+}

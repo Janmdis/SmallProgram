@@ -1,0 +1,205 @@
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd ">
+      <view class="newBox">
+        <view class='lineBox'></view>基础信息
+        <view class="msize"></view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd " style='width:auto;'>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd setWidths">
+          <view class="weui-label">户 型：</view>
+        </view>
+        <picker class='inputsize' bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+          <view class="weui-input ">{{countryCodes[countryCodeIndex]}}</view>
+        </picker>  
+        <view style="width:20px; text-align:center;"> 房</view>
+        <picker class='inputsize' bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+          <view class="weui-input ">{{countryCodes[countryCodeIndex]}}</view>
+        </picker><view style="width:20px; text-align:center;"> 厅</view>  
+        <picker class='inputsize' bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+          <view class="weui-input ">{{countryCodes[countryCodeIndex]}}</view>
+        </picker> 
+        <view style="width:20px; text-align:center;"> 厨</view>
+        <picker class='inputsize' bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+          <view class="weui-input ">{{countryCodes[countryCodeIndex]}}</view>
+        </picker>
+        <view style="width:40px;text-align:center;"> 阳台</view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd " style='width:auto;'>
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd setWidths">
+          <view class="weui-label">装修公司：</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="请输入电话号码" value="{{signDate}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd ">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd setWidths">
+          <view class="weui-label">装修风格：</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="请输入qq" value="{{dectype}}" />
+        </view>
+      </view>
+    </view>
+    <view class="weui-cell__hd ">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd setWidths">
+          <view class="weui-label">面 积：</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="请输入面积" value="{{measure}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd ">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd setWidths">
+          <view class="weui-label">合 同 价：</view>
+        </view>
+
+        <picker class='inputsize' bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+          <view class="weui-input ">{{countryCodes[countryCodeIndex]}}</view>
+          <text style='position:absolute; top:0;right:-50%'>10万含设计费</text>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd widthauto">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd setWidth">
+          <view class="weui-label checkBox">房屋类型：</view>
+        </view>
+        <checkbox-group bindchange="checkboxChange" class="checkBox">
+          <label class=" weui-check__label newWidth" wx:for="{{checkboxItems}}" wx:key="value">
+            <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}" />
+            <view class="weui-cell__hd weui-check__hd_in-checkbox newcheckSzie">
+              <icon class="weui-icon-radio" type="circle" size="12" wx:if="{{!item.checked}}"></icon>
+              <icon class="weui-icon-radio" type="success" size="12" wx:if="{{item.checked}}"></icon>
+            </view>
+            <view class="weui-cell__bd">{{item.name}}</view>
+          </label>
+        </checkbox-group>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd widthauto">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd setWidth">
+          <view class="weui-label checkBox">装修情况：</view>
+        </view>
+        <checkbox-group bindchange="checkboxChange" class="checkBox">
+          <label class=" weui-check__label newWidth" wx:for="{{checkboxItems}}" wx:key="value">
+            <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}" />
+            <view class="weui-cell__hd weui-check__hd_in-checkbox newcheckSzie">
+              <icon class="weui-icon-radio" type="circle" size="12" wx:if="{{!item.checked}}"></icon>
+              <icon class="weui-icon-radio" type="success" size="12" wx:if="{{item.checked}}"></icon>
+            </view>
+            <view class="weui-cell__bd">{{item.name}}</view>
+          </label>
+        </checkbox-group>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd widthauto">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd setWidth">
+          <view class="weui-label checkBox">装修用途：</view>
+        </view>
+        <checkbox-group bindchange="checkboxChange" class="checkBox">
+          <label class=" weui-check__label newWidth" wx:for="{{checkboxItems}}" wx:key="value">
+            <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}" />
+            <view class="weui-cell__hd weui-check__hd_in-checkbox newcheckSzie">
+              <icon class="weui-icon-radio" type="circle" size="12" wx:if="{{!item.checked}}"></icon>
+              <icon class="weui-icon-radio" type="success" size="12" wx:if="{{item.checked}}"></icon>
+            </view>
+            <view class="weui-cell__bd">{{item.name}}</view>
+          </label>
+        </checkbox-group>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd widthauto">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd setWidth">
+          <view class="weui-label checkBox">装修形式：</view>
+        </view>
+        <checkbox-group bindchange="checkboxChange" class="checkBox">
+          <label class=" weui-check__label newWidth" wx:for="{{checkboxItem}}" wx:key="value">
+            <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}" />
+            <view class="weui-cell__hd weui-check__hd_in-checkbox newcheckSzie">
+              <icon class="weui-icon-radio" type="circle" size="12" wx:if="{{!item.checked}}"></icon>
+              <icon class="weui-icon-radio" type="success" size="12" wx:if="{{item.checked}}"></icon>
+            </view>
+            <view class="weui-cell__bd">{{item.name}}</view>
+          </label>
+        </checkbox-group>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd ">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd setWidths">
+          <view class="weui-label">装修风格：</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="请输入qq" value="{{dectype}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="weui-cells__title"></view>
+<view class="weui-cells weui-cells_after-title setmarginbottom">
+  <view class="weui-cell weui-cell_select borders">
+    <view class="weui-cell__hd ">
+      <view class="newBox">
+        <view class='lineBox'></view>得房率信息(单位㎡)
+        <view class="msize"></view>
+        
+      </view>
+    </view>
+    <view class='addtext'>
+          添加
+    </view>
+  </view>
+  <view class='listBox clearfloat'>
+    <view class='boxSize '>
+      <view class='leftfloat'>主卧:</view>
+      <view class='leftfloat'>32</view>
+    </view>
+    <view class='boxSize '>
+      <view class='leftfloat'>主卧:</view>
+      <view class='leftfloat'>32</view>
+    </view>
+    <view class='boxSize '>
+      <view class='leftfloat'>主卧:</view>
+      <view class='leftfloat'>32</view>
+    </view>
+
+  </view>
+</view>
+
+
+<view class="weui-btn-area">
+  <button class="weui-btn">确定</button>
+</view>

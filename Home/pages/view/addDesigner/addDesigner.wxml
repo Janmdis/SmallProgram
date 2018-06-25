@@ -3,7 +3,7 @@
     
     <view class="weui-cell weui-cell_select">
         <view class="weui-cell__hd ">
-            <view class="newBox">装修公司名称(必填)</view>
+            <view class="newBox"><view class='lineBox'></view>装修公司名称<view class="msize">(必填)</view></view>
         </view>
         <view class="weui-cell__bd">
             <picker bindchange="bindCountryChange" value="{{countryIndex}}" range="{{countries}}">
@@ -16,8 +16,34 @@
 <view class="weui-cells weui-cells_after-title">
     <view class="weui-cell weui-cell_select">
         <view class="weui-cell__hd ">
-            <view class="newBox">(必填)</view>
+            <view class="newBox"><view class='lineBox'></view>设计师信息<view  class="msize">(必填)</view></view>
         </view>
+        
 
     </view>
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd ">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">姓名：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入qq"/>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cell__hd ">
+           <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">联系方式：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入电话号码"/>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="weui-btn-area">
+    <button class="weui-btn" >确定</button>
 </view>

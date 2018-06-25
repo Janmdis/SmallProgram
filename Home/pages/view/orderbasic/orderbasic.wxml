@@ -1,0 +1,98 @@
+<view class="weui-cells__title csize">基本信息</view>
+<view class="weui-panel weui-panel_access">
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd ">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">业主姓名：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="读取姓名" value="{{household}}"/>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cell__hd ">
+           <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">联系方式：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="读取电话" value="{{measure}}"/>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd ">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">业主地址：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="读取地址" value="{{household}}"/>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd ">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">年  龄：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入年龄" value="{{household}}"/>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cell__hd ">
+           <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">职  业：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入职业" value="{{measure}}"/>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="weui-cells__title csize">入住情况</view>
+<view class="weui-panel weui-panel_access">
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd ">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">常驻人数：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="4人" value="{{household}}"/>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd ">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">业主地址：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="读取地址" value="{{household}}"/>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd ">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">孩子年龄：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入年龄" value="{{household}}"/>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

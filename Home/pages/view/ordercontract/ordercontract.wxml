@@ -1,0 +1,61 @@
+<view class="weui-panel weui-panel_access">
+  <view class="weui-panel__hd">一、是否有主要的材料品牌详单（油漆、板材、水电、防水等材料）</view>
+  <view class="weui-panel__bd bodymg">
+    <checkbox-group bindchange="checkboxChange">
+          <label class=" weui-check__label newWidth" wx:for="{{checkboxItems}}" wx:key="value">
+              <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+
+              <view class="weui-cell__hd weui-check__hd_in-checkbox newcheckSzie">
+                  <icon class="weui-icon-radio"  type="circle" size="12" wx:if="{{!item.checked}}"></icon>
+                  <icon class="weui-icon-radio"  type="success" size="12" wx:if="{{item.checked}}"></icon>
+              </view>
+              <view class="weui-cell__bd">{{item.name}}</view>
+          </label>
+      </checkbox-group>
+  </view>
+</view>
+<view class="weui-panel weui-panel_access">
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd ">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">合同付款方式：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入合同付款方式" value="{{household}}"/>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd ">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">工期约定：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入工期约定" value="{{household}}"/>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd ">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">其他：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="请输入其他" value="{{household}}"/>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="weui-panel weui-panel_access">
+
+</view>
+
+<view class="weui-btn-area">
+     <button class="weui-btn"  bindtap="showTopTips">确定</button>
+</view>
