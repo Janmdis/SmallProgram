@@ -13,9 +13,17 @@
     "pages/view/orderWait/details/details",
     "pages/view/orderWait/reportAccept/reportAccept",
     "pages/view/orderWait/disclosureStart/disclosureStart",
-    "pages/view/orderOwner/list/list",
     "pages/view/orderOwner/details/details",
+    "pages/view/orderOwner/list/list",
     "pages/view/orderOwner/followSubproject/followSubproject",
+    "pages/view/orderOwner/subprojScan/subprojScan",
+    "pages/view/orderOwner/addBasicinfo/addBasicinfo",
+    "pages/view/orderOwner/addConstruinfo/addConstruinfo",
+    "pages/view/orderOwner/disclosureStart/disclosureStart",
+    "pages/view/orderOwner/preview/preview",
+    "pages/view/orderOwner/reportAccept/reportAccept",
+    
+    
     "pages/view/userLogin/login/login",
     "pages/view/userLogin/perfectUser/perfectUser",
     "pages/view/userLogin/quickLogon/quickLogon",

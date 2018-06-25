@@ -1,2 +1,23 @@
-<!--pages/view/orderOwner/followSubproject/followSubproject.wxml-->
-<text>pages/view/orderOwner/followSubproject/followSubproject.wxml</text>
+
+<view class='followsubproject'>
+    <view>
+        <view class='titles'><text class='flag'>上传图片</text></view>
+        <view class='content_detail imglist'>
+          <image class='imgs' wx:for="{{imglist}}" data-src='{{item.src}}'  mode="scaleToFill" src="{{item.src}}"></image> 
+          <view class='uploadimg'>
+              <view class='iconfont icon-zhaoxiangji'></view>
+              <view style='font-size:20rpx;text-align:center;'>单次上传</view>
+              <view style='font-size:20rpx;text-align:center;'>最多10张</view>
+          </view> 
+        </view>
+    </view>
+    <view>
+        <view class='titles'><text class='flag'>备注</text></view>
+        <view class='content_detail'>
+          <textarea class='remarks' placeholder='请输入备注'></textarea>
+        </view>
+    </view> 
+    <view class='btngroup'>
+        <button class="weui-btn" type="primary">提交</button>
+    </view>
+</view>

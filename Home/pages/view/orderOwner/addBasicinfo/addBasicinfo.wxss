@@ -1,0 +1,73 @@
+/* pages/view/orderDetails/orderDetails.wxss */
+.basicinfo{
+  font-size:25rpx;
+  color:#757575;
+  background-color: #f5f5f5;
+}
+.basicinfo>view:not(.overback){
+  padding: 10rpx 0rpx;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom:15rpx;
+}
+.basicinfo .titles{
+  padding:0rpx 20rpx 10rpx 20rpx;
+  border-bottom: 1rpx #f5f5f5 solid;
+}
+.basicinfo  .flag{
+  width:5rpx;
+  height:5rpx;
+  border-left:5rpx #30bc8f solid;
+  padding-left: 10rpx;
+}
+.basicinfo .content_detail{
+  padding:10rpx 40rpx;
+}
+.basicinfo .content_detail>view{
+  clear: both;
+  width:100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 15rpx 0rpx;
+  border-bottom: 1rpx solid #cccccc;
+}
+.basicinfo .half{
+  width:40%;
+  float: left;
+  padding-right: 65rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.borderstyle{
+  width:57%;
+  height:90%;
+  border:1px solid #cccccc;
+  position: absolute;
+  top:0;
+  right:0;
+}
+.content_detail textarea{
+  width:93%;
+  background-color: #f5f5f5;
+  padding: 20rpx;
+  margin-top:10rpx;
+  border-radius: 10rpx;
+}
+.btngroup{
+   margin-top:100rpx;
+   position: fixed;
+   bottom:0rpx;
+   width:100%;
+   margin-bottom: 0rpx !important;
+   padding-bottom: 0rpx !important;
+}
+.btngroup .weui-btn{
+  font-size:30rpx;
+  border-radius: 0;
+  margin-top:0rpx;
+}
+.weui-btn[type='primary']{
+  background-color: #11b786;
+}

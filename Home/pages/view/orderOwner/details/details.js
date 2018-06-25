@@ -5,10 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    // 待接单
-    isorderwait:true,
-    // 已接单
-    isorderowner:false,
+    // 陪签服务类型
+    ispq:false,
+    // 监理服务
+    isjl:true,
     orderdetail:{
       "number":123456,
       "servicename":'陪签服务',
@@ -21,9 +21,17 @@ Page({
       "type_renovation":"类型一",
       "remark":'这是备注这是备注这是备注这是备注这是备注这是备注这是备注这是备注这是备注这是备注这是备注这是备注'
     },
-    typelist_renovation:[
-
-    ],
+    // 装修风格
+    typelist_renovation: ["风格一", "风格二","风格三"],
+    renovationIndex:0,
+    // 当前节点
+    nodes_current:["节点一","节点二","节点三"],
+    nodescurrentIndex:0,
+    date_currentnode:'',
+    // 下个节点
+    nodes_next: ["节点一", "节点二", "节点三"],
+    nodesnextIndex: 0,
+    date_nextnode: '',
     // 验收节点
     acceptnodes:['验收交底3.0','砌筑巡检3.0'],
     tabs:[
@@ -68,6 +76,36 @@ Page({
   giveupOrder: function (e) {
 
     console.log(e.target);
+  },
+  // 选择装修类型
+  bindPickerChange:function(e){
+    this.setData({
+      renovationIndex: e.detail.value
+    })
+  }, 
+  // 选择当前节点
+  bindPickerChange_currentnode:function(e) {
+    this.setData({
+      nodescurrentIndex: e.detail.value
+    })
+  },
+  // 选择当前节点时间
+  bindDatechange_currentnode: function (e) {
+    this.setData({
+      date_currentnode: e.detail.value
+    })
+  },
+  // 选择下一个节点
+  bindPickerChange_nextnode:function(e){
+    this.setData({
+      nodesnextIndex: e.detail.value
+    })
+  },
+  // 选择下一个节点时间
+  bindDatechange_nextnode:function(e){
+    this.setData({
+      date_nextnode: e.detail.value
+    })
   },
   /**
    * 生命周期函数--监听页面加载
@@ -123,7 +161,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  // 改变装修类型
-  selectrenovationtype(event){}
+  }
 })

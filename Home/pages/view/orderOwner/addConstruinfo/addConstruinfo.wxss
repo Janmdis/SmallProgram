@@ -1,0 +1,98 @@
+/* pages/view/orderDetails/orderDetails.wxss */
+.constructioninfo{
+  font-size:25rpx;
+  color:#757575;
+  background-color: #f5f5f5;
+}
+.constructioninfo>view{
+  padding: 10rpx 0rpx;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom:15rpx;
+}
+.constructioninfo .titles{
+  padding:0rpx 20rpx 10rpx 20rpx;
+  border-bottom: 1rpx #f5f5f5 solid;
+}
+.constructioninfo  .flag{
+  width:5rpx;
+  height:5rpx;
+  border-left:5rpx #30bc8f solid;
+  padding-left: 10rpx;
+}
+.constructioninfo .content_detail{
+  padding:10rpx 20rpx;
+  overflow:hidden;
+}
+.constructioninfo .content_detail>view{
+  /* clear: both; */
+  /* width:100%; */
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
+  padding: 15rpx 0rpx;
+  /* border-bottom: 1rpx solid #cccccc; */
+}
+.constructioninfo .content_detail .name{
+  height:53rpx;
+  line-height: 1.9;
+  float: left;
+}
+.constructioninfo .content_detail input{
+  width:65%;
+  display:block;
+  float: left;
+  background-color: #f5f5f5;
+  border-radius: 10rpx;
+  padding:0 5rpx;
+}
+
+
+
+
+.constructioninfo .half{
+  width:45%;
+  float: left;
+  
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
+}
+.constructioninfo .half:nth-child(1){
+    margin-right:40rpx;
+}
+.constructioninfo .half:nth-child(2) input{
+    width:58%;
+}
+
+.borderstyle{
+  width:63%;
+  height:95%;
+  border:1px solid #cccccc;
+  position: absolute;
+  top:0;
+  right:0;
+}
+.content_detail textarea{
+  width:93%;
+  background-color: #f5f5f5;
+  padding: 20rpx;
+  margin-top:10rpx;
+  border-radius: 10rpx;
+}
+.btngroup{
+   margin-top:100rpx;
+   position: fixed;
+   bottom:0rpx;
+   width:100%;
+   margin-bottom: 0rpx !important;
+   padding-bottom: 0rpx !important;
+}
+.btngroup .weui-btn{
+  font-size:30rpx;
+  border-radius: 0;
+  margin-top:0rpx;
+}
+.weui-btn[type='primary']{
+  background-color: #11b786;
+}

@@ -5,7 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-
     imglist: [
       {
         src: '../../../images/ok.png'
@@ -32,9 +31,18 @@ Page({
         src: '../../../images/ok.png'
       }
     ],
-
+    remarks:'这里是备注这里是备注这里是备注这里是备注这里是备注这里是备注这里是备注这里是备注这里是备注这里是备注这里是备注这里是备注这里是备注这里是备注这里是备注这里是备注',
+    src_bingimg:'',
+    bigimghidden:true
   },
-
+  hideBigimg:function(e){
+    this.setData({ bigimghidden:true});
+  },
+  enlarge:function(e){
+    var src=e.currentTarget.dataset.src;
+    this.setData({src_bingimg:src});
+    this.setData({ bigimghidden:false});
+  },
   /**
    * 生命周期函数--监听页面加载
    */

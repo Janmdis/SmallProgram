@@ -1,0 +1,58 @@
+<view class='basicinfo'>
+    <view>
+        <view class='titles'><text class='flag'>基础信息</text></view>
+        <view class='content_detail'>
+           <view>
+              <view class='half'>装修公司：这是装修公司这是装修公司这是装修公司</view>
+              <view class='half'>陪签日期：2018-12-12</view>
+           </view>
+           <view>
+              <view class='half'>装修风格：简欧</view>
+              <view class='half'>
+                  <picker style='position:relative;' bindchange="bindPickerChange" value="{{renovationIndex}}" range="{{typelist_renovation}}">
+                    <view class="picker">
+                      装修类型：{{typelist_renovation[renovationIndex]}}
+                    </view>
+                    <view class='borderstyle'></view>
+                  </picker>
+              </view>
+           </view>
+           <view>
+              <view class='half'>户　　型：三室一厅</view>
+              <view class='half'>面　　积：10㎡</view>
+           </view>
+           <view>
+              <view class='half'>原 报 价 ：10万</view>
+              <view class='half'>
+                  <picker style='position:relative;' bindchange="bindPickerChange" value="{{renovationIndex}}" range="{{typelist_renovation}}">
+                    <view class="picker">
+                      合 同 价 ：{{typelist_renovation[renovationIndex]}}
+                    </view>
+                    <view class='borderstyle'></view>
+                    <text style='position:absolute;top:0rpx;right:-60rpx;'>10万</text>
+                  </picker>
+              </view>
+           </view>
+           <view>
+              <view class='half'>设 计 费 ：1万</view>
+              <view class='half'>管理费率：10%</view>
+           </view>
+           <view>
+              <view class='half'>直 接 费 ：1万</view>
+              <view class='half'>项目经理工资：1万</view>
+           </view>
+        </view>
+    </view> 
+    <view class='boardarea' style='padding:10rpx 30rpx 20rpx 30rpx;background-color:#f5f5f5'>
+        *以上属于必填，没有则填无
+    </view>
+    <view>
+        <view class='titles'><text class='flag'>备注</text></view>
+        <view class='content_detail'>
+            <textarea placeholder='请填写备注'></textarea>
+        </view>
+    </view>
+    <view class='btngroup'>
+        <button class="weui-btn" type="primary">立即派单</button>
+    </view>
+</view>

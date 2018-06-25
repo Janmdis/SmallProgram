@@ -1,0 +1,17 @@
+<view class='followsubproject'>
+    <view>
+        <view class='titles'><text class='flag'>上传图片</text></view>
+        <view class='content_detail imglist'>
+          <image class='imgs' wx:for="{{imglist}}" data-src='{{item.src}}'  mode="scaleToFill" src="{{item.src}}" bindtap='enlarge'></image> 
+        </view>
+    </view>
+    <view>
+        <view class='titles'><text class='flag'>备注</text></view>
+        <view class='content_detail'>
+            <view>{{remarks}}</view>
+        </view>
+    </view> 
+    <view class='overback' hidden='{{bigimghidden}}' bindtap='hideBigimg'>
+      <image src="{{src_bingimg}}" mode='aspectFit'></image>
+    </view>
+</view>

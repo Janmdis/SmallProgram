@@ -1,34 +1,40 @@
-
+// pages/view/orderOwner/addConstruinfo/addConstruinfo.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    datalist: [
-      { "name": '房间墙顶地面', "names": "房间正度", "types": "合格", "condition": true },
-      { "name": '房间墙顶地面', "names": "房间正度", "types": "无需验收" },
-      { "name": '房间墙顶地面', "names": "房间正度", "types": "不合格" },
-      { "name": '房间墙顶地面', "names": "房间正度", "types": "合格" },
-    ]
+    // 装修方式
+    typelist_renovation:['方式一',"方式二","方式三"],
+    renovationIndex:0,
+    // 计价方式
+    typelist_price:["方式一","方式二","方式三"],
+    priceIndex:0,
+    // 工种
+    typelist_worker: ["工种一", "工种二", "工种三"],
+    workerIndex: 0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+  
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+  
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+  
   },
 
   /**
@@ -64,21 +70,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-
-  quickLogon: () => {
-    wx.navigateTo({
-      url: '../quickLogon/quickLogon'
-    })
-  },
-  missCipher: () => {
-    wx.navigateTo({
-      url: '../missCipher/missCipher',
-    })
-  },
-  login: () => {
-    wx.switchTab({
-      url: '../orderOwner/orderOwner',
-    })
   }
 })
