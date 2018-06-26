@@ -137,3 +137,70 @@ checkbox-group{
  color: #08c078;
   font-weight: 700;
 }
+.mask{
+  position: fixed;
+  top:0;
+  height: 100%;
+  width: 100%;
+  background: rgba(000,000,000,0.3);
+  z-index: 99;
+}
+.maskBox{
+  width: 80%;
+  height: 400rpx;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -180rpx;
+  left: 50%;
+  margin-left: -40%;
+  border-radius: 10px;
+   overflow: hidden;
+}
+.maskTop{
+  height: 20%;
+  padding-left: 10px;
+}
+.maskMiddle{
+   height: 60%;
+   border-top:1px solid #ddd;
+}
+
+.maskfooter{
+  text-align: center;
+  color: #08c078;
+  border-top:1px solid #ddd;
+  overflow: hidden;
+  height: 20%;
+}
+.maskfooter .leftBox{
+  float: left;
+  width: 49.8%;
+  border-right: 1px solid #ddd;
+}
+.maskfooter .rightBox{
+  float: left;
+  width: 49.8%;
+}
+.content_detail{
+  padding:5px 20px;
+}
+.half{
+  height:50px;
+  line-height: 50px;
+}
+.half .name,.half input{
+  float: left;
+   height: 100%;
+   line-height: 50px;
+   
+}
+.half input{
+  float: left;
+   height:30px;
+   line-height: 50px;
+   background: #f0f0f0;
+   padding: 0 10px;
+   margin: 10px 10px;
+}
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}

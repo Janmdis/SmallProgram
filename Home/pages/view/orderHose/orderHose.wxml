@@ -198,7 +198,29 @@
 
   </view>
 </view>
-
+<view class='mask'>
+  <view class="maskBox">
+    <view class='maskTop'>添加得房率的信息</view>
+    <view class='maskMiddle'>
+     <view>
+        <view class='content_detail'>
+          <view class='half clearfloat'>
+              <view class='name'>类型：</view>
+              <input  placeholder='填写姓名' placeholder-style='color:#cccccc;'  />
+          </view>
+          <view class='half clearfloat'>
+            <view class='name'>面积：</view>
+            <input  placeholder='填写电话' placeholder-style='color:#cccccc;'  />㎡
+          </view>
+        </view>
+    </view> 
+    </view>
+    <view class='maskfooter'>
+        <view class='leftBox'>确认</view>
+        <view class='rightBox'>取消</view>
+    </view>
+  </view>
+</view>
 
 <view class="weui-btn-area">
   <button class="weui-btn">确定</button>

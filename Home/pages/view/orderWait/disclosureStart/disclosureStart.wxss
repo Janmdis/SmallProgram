@@ -17,3 +17,11 @@ view{
   color: red;
   font-size: 18px;
 }
+.mask{
+  position: fixed;
+  height: 100%;
+  width:100%;
+  background: rgba(255,255,255,0.2);
+  top:0;
+  z-index: 99;
+}

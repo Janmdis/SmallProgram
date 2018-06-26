@@ -1,5 +1,13 @@
 {
   "pages": [
+    "pages/view/userLogin/login/login",
+    "pages/view/userLogin/perfectUser/perfectUser",
+    "pages/view/userLogin/quickLogon/quickLogon",
+    "pages/view/userLogin/missCipher/missCipher",
+    "pages/view/userLogin/userInfo/userInfo",
+    "pages/view/userLogin/setInfo/setInfo",
+    "pages/view/userLogin/setpass/setpass",
+    
     "pages/view/orderHose/orderHose",
     "pages/view/orderbasic/orderbasic",
     "pages/view/orderother/orderother",
@@ -22,15 +30,10 @@
     "pages/view/orderOwner/disclosureStart/disclosureStart",
     "pages/view/orderOwner/preview/preview",
     "pages/view/orderOwner/reportAccept/reportAccept",
+    "pages/view/demandinformaction/demandinformaction",
     
     
-    "pages/view/userLogin/login/login",
-    "pages/view/userLogin/perfectUser/perfectUser",
-    "pages/view/userLogin/quickLogon/quickLogon",
-    "pages/view/userLogin/missCipher/missCipher",
-    "pages/view/userLogin/userInfo/userInfo",
-    "pages/view/userLogin/setInfo/setInfo",
-    "pages/view/userLogin/setpass/setpass",
+    
     "pages/view/infoBox/comment/comment",
     "pages/view/infoBox/orderDeil/orderDeil",
     "pages/view/infoBox/info/info",
