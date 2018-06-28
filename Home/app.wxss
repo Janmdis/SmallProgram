@@ -10,4 +10,13 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
-
+.toast {  
+  display: inline-block;  
+  padding: 20rpx 40rpx;  
+  min-width: 12000rpx;  
+  font-size: 28rpx;  
+  color: #fff;  
+  background: rgba(0, 0, 0, .5);  
+  border-radius: 10rpx;  
+  text-align: center;  
+} 

@@ -1,17 +1,17 @@
 <view class='page__bd'>
   <view wx:if="{{condition}}">
-  <form>
+  <form bindsubmit="formSubmit">
     <view class='boxpositio'>
       <view class="weui-cell weui-cell_input weui-cell_vcode">
           <view class="iconfont icon-users"></view>  
           <view class="weui-cell__bd">
-              <input class="weui-input" placeholder="手机号码" />
+              <input name='iphone' class="weui-input" placeholder="手机号码" />
           </view>
       </view>
       <view class="weui-cell weui-cell_input weui-cell_vcode">
           <view class="iconfont icon-email"></view>  
           <view class="weui-cell__bd">
-              <input class="weui-input" placeholder="请输入验证码" />
+              <input name='codenum' class="weui-input" placeholder="请输入验证码" />
           </view>
           <view class="weui-cell__ft">
               <button class="weui-vcode-btn getcode" disabled='{{disabled}}' bindtap='getVerificationCode'>{{time}}</button>
@@ -20,19 +20,19 @@
       <view class="weui-cell weui-cell_input weui-cell_vcode">
           <view class="iconfont icon-loock"></view>  
           <view class="weui-cell__bd">
-              <input class="weui-input" type='password' placeholder="输入新密码" />
+              <input name='password' class="weui-input" type='password' placeholder="输入新密码" />
           </view>
       </view>
       <view class="weui-cell weui-cell_input weui-cell_vcode">
           <view class="iconfont icon-loock"></view>  
           <view class="weui-cell__bd">
-              <input class="weui-input" type='password' placeholder="输入确认新密码" />
+              <input name='passwordT' class="weui-input" type='password' placeholder="输入确认新密码" />
           </view>
       </view>
       <view class="weui-cell weui-cell_input weui-cell_vcode">
       </view>
       <view class="page__bd page__bd_spacing marginTop buttonStyle">
-        <button class="weui-btn" >完成</button>
+        <button formType="submit" class="weui-btn" >提交</button>
     </view>
     </view>
   </form>
