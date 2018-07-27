@@ -36,12 +36,7 @@ Page({
   },
   getMusicInfo: function (message) {
     var that = this
-    var data = {
-      showapi_appid: '25158',
-      showapi_sign: 'c0d685445898438f8c12ee8e93c2ee74',
-      keyword: '我',
-      page: that.data.page
-    }
+   
     network.requestLoading(
       utilBox.urlheader + `public/message/record/query?page=${this.data.page}&pageSize=10`, 
       {},

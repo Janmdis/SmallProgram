@@ -62,6 +62,7 @@ Page({
    */
   onLoad: function (options) {
     let info = wx.getStorageSync('orderInfo');
+   
     console.log(info.id)
     network.requestLoading(
       utilBox.urlheader + `public/entryreport/queryMapByProjectIds`,
@@ -72,9 +73,9 @@ Page({
         if (res.status == 200) {
         }
       }, function (res) {
-        // wx.showToast({
-        //   title: '加载数据失败',
-        // })
+        wx.showToast({
+          title: '加载数据失败',
+        })
       }, 'application/json');
 
     if (info.orderDetail){
@@ -94,16 +95,27 @@ Page({
   },
   upDateinfo:function(){
     let info = wx.getStorageSync('orderInfo');
+    let userInfo = wx.getStorageSync('userInfo');
+    let worklists = wx.getStorageSync('worklists');
+    console.log()
     network.requestLoading(
-      utilBox.urlheader + `product/workList/arrangement`,
-      { projectEstablishIdList:[info.id],
-        adminList: [{ "adminId": "a2w21d3r4", "name": "思百", "phone": "18356121545" }
-          , { "adminId": "1w4r5y6u7i", "name": "赫伟", "phone": "13245181795" }]
+      utilBox.urlheader + `product/workList/update`,
+      {
+        id: worklists[0].id,
+        isAccepted:1
       }, "",
       function (res) {
         console.log(res)
         let resMessage = res.info
-        if (res.status == 200) {
+        if (res.msg == "修改") {
+          wx.showToast({
+            title: '添加成功',
+          })
+          setTimeout(() => {
+            wx.switchTab({
+              url: '../../orderWait/list/list',
+            })
+          }, 2000)
         }
       }, function (res) {
         wx.showToast({

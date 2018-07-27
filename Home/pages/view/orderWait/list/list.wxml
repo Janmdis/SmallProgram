@@ -4,7 +4,7 @@
       </input>
   </view>
   <scroll-view class='container_order' scroll-y='true'>
-    <view class='order' wx:for='{{list}}' bindtap='toDetails' data-info="{{item}}" data-id='item.id'>
+    <view class='order' wx:for='{{contentlist}}' bindtap='toDetails' data-workLists="{{item.workLists}}" data-info="{{item}}" data-id='item.id'>
       <view class='order_top'>
         <text class='float_l'>订单编号：{{item.orderInfo.number}}</text>
         <text class='float_r'>
@@ -53,7 +53,7 @@
       </view>
       <view class='btngroup'>
           <button class='prime'>立即接单</button>
-          <button class='warn' data-ids="{{item.id}}" catchtap='changeshows'>放弃接单</button>
+          <button class='warn' data-ids="{{item.id}}" data-workLists="{{item.workLists}}" catchtap='changeshows'>放弃接单</button>
       </view>
     </view>
   </scroll-view>

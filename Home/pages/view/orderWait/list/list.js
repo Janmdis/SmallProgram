@@ -8,10 +8,10 @@ Page({
    */
   data: {
     page:1,
-    orderIds:"",
-    contentlistTem:[],
-    pageSize: 30,
+    pageSize: 3,
+    contentlist:[],
     hasMoreData: true,
+    orderIds: "",
     inputVal:"",
     list: [
       {
@@ -32,6 +32,7 @@ Page({
 
   changeshows:function(e){
     console.log(e)
+    wx.setStorageSync('worklists', e.currentTarget.dataset.worklists)
     this.setData({ orderIds: e.currentTarget.dataset.ids });
     this.setData({ showcancle: false });
   },
@@ -51,15 +52,18 @@ Page({
  
   },
   formSubmit: function (options){
-    
-    console.log(this.data.orderIds)
+    console.log(options)
     this.setData({
       inputVal: '',
     })
-    console.log(options.detail.value.text)
+    let worklists = wx.getStorageSync('worklists');
     network.requestLoading(
-      utilBox.urlheader + `product/workList/bulkDeleteByAdminId?adminId=${[wx.getStorageSync("userInfo").id]}`,
-      [this.data.orderIds], "",
+      utilBox.urlheader + `product/workList/update`,
+      {
+        id: worklists[0].id,
+        isAccepted: 2,
+        rejectedReason: options.detail.value.text
+      }, "",
        function (res) {
         console.log(res)
         let resMessage = res.info
@@ -68,6 +72,7 @@ Page({
           wx.showToast({
             title:"放弃接单",
           })
+          this.setData({ showcancle: true });
           this.getMusicInfo('正在加载数据...')
         } else {
           wx.showToast({
@@ -97,52 +102,58 @@ Page({
     that.getMusicInfo('正在加载数据...')
   },
   onPullDownRefresh: function () {
+    console.log(1)
     this.data.page = 1
     this.getMusicInfo('正在刷新数据')
   },
   onReachBottom: function () {
-    this.getMusicInfo('加载更多数据')
+    console.log(1)
+    if (this.data.hasMoreData) {
+        this.getMusicInfo('加载更多数据')
+     } else {
+        wx.showToast({
+           title: '没有更多数据',
+        })
+     }
   },
   getMusicInfo: function (message) {
-    console.log();
-    var that = this
-    var data = {
-      showapi_appid: '25158',
-      showapi_sign: 'c0d685445898438f8c12ee8e93c2ee74',
-      keyword: '我',
-      page: that.data.page
-    }
+    var that = this;
     network.requestLoading(
-      utilBox.urlheader + `product/workList/queryListByAdminIds?page=${that.data.page}&pageSize=10`,
+      utilBox.urlheader + `product/workList/queryListByAdminIds?page=${that.data.page}&pageSize=${that.data.pageSize}&isAccepted=0&keyword=`,
        [wx.getStorageSync("userInfo").id],
       message, function (res) {
         console.log(res)
-        let resMessage = res.info.list
-        console.log(resMessage)
-        that.setData({list :resMessage})
         var contentlistTem = that.data.contentlist
-        // if (res.status == 200) {
-        //   if (that.data.page == 1) {
-        //     contentlistTem = []
-        //   }
-        //   var contentlist = res.info
-        //   if (contentlist.length < that.data.pageSize) {
-        //     that.setData({
-        //       contentlist: contentlistTem.concat(contentlist),
-        //       hasMoreData: false
-        //     })
-        //   } else {
-        //     that.setData({
-        //       contentlist: contentlistTem.concat(contentlist),
-        //       hasMoreData: true,
-        //       page: that.data.page + 1
-        //     })
-        //   }
-        // } else {
-        //   wx.showToast({
-        //     title: res.showapi_res_error,
-        //   })
-        // }
+        let resMessage = res.info.list
+        var contentlistTem = that.data.contentlist
+        if (res.status == 200) {
+
+          if (that.data.page == 1) {
+            contentlistTem = []
+          }
+          var contentlist = res.info.list
+          if (contentlist.length < that.data.pageSize) {
+            that.setData({
+              contentlist: contentlistTem.concat(contentlist),
+              hasMoreData: false
+            })
+          } else {
+            that.setData({
+              contentlist: contentlistTem.concat(contentlist),
+              hasMoreData: true,
+              page: that.data.page + 1
+            })
+          }
+        } else {
+          if (res.info == "尚未登录"){
+            wx.navigateTo({
+              url: '../../orderWait/list/list',
+            })
+          }
+          wx.showToast({
+            title: "加载数据失败",
+          })
+        }
         
 
       }, function (res) {
@@ -153,7 +164,9 @@ Page({
   },
   
   toDetails(event) {
+    console.log(event)
     wx.setStorageSync('orderInfo', event.currentTarget.dataset.info)
+    wx.setStorageSync('worklists', event.currentTarget.dataset.worklists)
     wx.navigateTo({
       url: '../details/details',
     })
