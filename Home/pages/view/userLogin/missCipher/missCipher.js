@@ -1,5 +1,6 @@
 // pages/missCipher/missCipher.js
 var utilBox = require("../../../../utils/utilBox.js")
+var network = require("../../../../utils/network.js")
 Page({
 
   /**
@@ -12,7 +13,7 @@ Page({
     tiems:true
   },
   formSubmit: function (e) {
-    if (utilBox.isPass(e.detail.value.password)) {
+    if (!utilBox.trims(e.detail.value.password)) {
       if (e.detail.value.password != e.detail.value.passwordT) {
         wx.showToast({
           title: '二次密码不等',
@@ -26,9 +27,41 @@ Page({
             icon: "succsee",
             duration: 3000, //提示的延迟时间，单位毫秒，默认：1500
             success: function () {
-              wx.switchTab({
-               url: '../../orderWait/list/list',
-              })
+              network.requestLoading(
+                "https://api.jingrunjia.com.cn/api/admin/account/setpassword",
+                {
+                  phone:e.detail.value.iphone,
+                  newPassword:e.detail.value.password,
+                  confirmPassword:e.detail.value.passwordT,
+                  proof:e.detail.value.codenum 
+                },
+                "提交中..",
+                function(res){
+                 if(res.status==200){
+                   wx.showToast({
+                     title: res.msg,
+                     image: '../../../images/ok.png',  //自定义图标的本地路径，image 的优先级高于 icon
+                     duration: 3000, //提示的延迟时间，单位毫秒，默认：1500
+                   });
+                   setTimeout(()=>{
+                     wx.navigateTo({
+                       url: '../login/login',
+                     })
+                   },1000)
+                 }else{
+                   wx.showToast({
+                     title: res.msg,
+                     image: '../../../images/fail.png',  //自定义图标的本地路径，image 的优先级高于 icon
+                     duration: 3000, //提示的延迟时间，单位毫秒，默认：1500
+                   });
+                 }
+                  
+                },
+                function (res){
+                  console.log(res)
+                }
+              )
+              
             }
           });
         }else{
@@ -62,6 +95,32 @@ Page({
     }
   },
   getCode: function (options) {
+    var mobile = this.data.mobile;
+    if (!utilBox.isPhone(mobile)){
+      wx.showToast({
+        title: '手机号码不能为空',
+        icon: "succsee",
+        duration: 3000, //提示的延迟时间，单位毫秒，默认：1500
+      });
+      this.setData({
+        disabled: false
+      })
+      return false;
+    }
+    network.requestLoading(
+      "https://api.jingrunjia.com.cn/api/admin/account/sendphonecode",
+      { phone: mobile},
+      "发送中",
+      function(res){
+      console.log(res)
+      },
+      function(res){
+
+      }
+    )
+    this.setData({
+      disabled: true
+    })
     var that = this;
     var currentTime = that.data.currentTime
     var interval = setInterval(function () {
@@ -78,18 +137,22 @@ Page({
         })
       }
     }, 1000)
+
+  },
+  mobileInputEvent: function (e) {
+    this.setData({
+      mobile: e.detail.value
+    })
   },
   getVerificationCode() {
     this.getCode();
-    var that = this
-    that.setData({
-      disabled: true
-    })
+    // var that = this
+    // that.setData({
+    //   disabled: true
+    // })
   },
   gotoLogon:()=>{
-    wx.navigateTo({
-      url: '../login/login',
-    })
+   
   }
  
 })

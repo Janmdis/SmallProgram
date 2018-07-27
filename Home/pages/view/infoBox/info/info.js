@@ -1,5 +1,6 @@
 // pages/login/login.js
-var network = require("../../../../utils/network.js")
+var network = require("../../../../utils/network.js");
+var utilBox = require("../../../../utils/utilBox.js");
 Page({
 
   /**
@@ -41,7 +42,10 @@ Page({
       keyword: '我',
       page: that.data.page
     }
-    network.requestLoading('xxx', data, message, function (res) {
+    network.requestLoading(
+      utilBox.urlheader + `public/message/record/query?page=${this.data.page}&pageSize=10`, 
+      {},
+      message, function (res) {
       console.log(res)
       var contentlistTem = that.data.contentlist
       if (res.showapi_res_code == 0) {
@@ -71,8 +75,7 @@ Page({
       wx.showToast({
         title: '加载数据失败',
       })
-
-    })
+      },'application/json')
   },
  
 })

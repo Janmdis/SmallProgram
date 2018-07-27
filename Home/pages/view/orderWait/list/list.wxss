@@ -162,7 +162,14 @@ page{
   display: flex;
   justify-content: center;
 }
-.dialog .btngroup view{
+.dialog .btngroup .cancle{
+  margin-right:0;
+background:#fff;
+border-radius:0;
+border:1px solid #ddd;
+
+}
+.dialog .btngroup view, .dialog .btngroup .cancle{
   text-align: center;
   font-size: 25rpx;
   margin-top:0rpx;
@@ -172,6 +179,7 @@ page{
   padding-bottom: 20rpx;
   clear: both;
   border-top: 1rpx solid #cccccc;
+  line-height: 30px;
 }
 .dialog .btngroup .certain{
   border-right: 1rpx solid #cccccc;

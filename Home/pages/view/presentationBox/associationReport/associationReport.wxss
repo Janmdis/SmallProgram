@@ -35,7 +35,7 @@ page{
 }
 .textSize{
   display: inline-block;
-  width: 210px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
+  width: 150px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;
 
 }
 .iconfont{

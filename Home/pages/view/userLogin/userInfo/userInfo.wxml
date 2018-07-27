@@ -2,19 +2,19 @@
   <view class='userImf'>
     <view class='userBox'></view>
     <view class='boxImg'>
-      <image src='../../../images/logo.png'></image>
+      <image src='{{userinfo.adminHeadImg}}'></image>
     </view>
   </view>
-  <view class='userText'  bindtap='goPerfect' >
+  <view class='userText'   >
     <view class='marginBox' >
       <view class='usrName'>
-        汪升维
+        {{userinfo.adminName}}
       </view>
       <view class='line'>
       </view>
       <view class='userInfo'>
-        <text>高级管家</text>
-        <text>13567121454</text>
+        <text>{{userinfo.accGradeName}}</text>
+        <text>{{userinfo.phone}}</text>
       </view>
     </view>
   </view>
@@ -54,7 +54,7 @@
       <view class="weui-cell__hd">
        <view class="iconfont icon-add"></view>  
       </view>
-      <view class="weui-cell__bd">服务区域 : 杭州西湖</view>
+      <view class="weui-cell__bd">服务区域 : {{userinfo.areaName}}</view>
 
     </navigator>
     <navigator url="" class="weui-cell weui-cell_access">
@@ -64,14 +64,14 @@
       <view class="weui-cell__bd">联系客服 : 95555555</view>
 
     </navigator>
-    <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <button  id="shareBtn" open-type="share" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
       <view class="weui-cell__hd">
        <view class="iconfont icon-share" ></view>  
       </view>
       <view class="weui-cell__bd">分享朋友</view>
       <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-    </navigator>
-    <navigator url="../../view/setInfo/setInfo" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    </button>
+    <navigator url="../setInfo/setInfo" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
       <view class="weui-cell__hd">
         <view class="iconfont icon-set" ></view>  
       </view>

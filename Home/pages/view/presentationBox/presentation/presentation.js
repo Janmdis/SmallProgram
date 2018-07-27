@@ -6,8 +6,17 @@ Page({
     activeIndex: 0,
     sliderOffset: 0,
     sliderLeft: 0,
+    currentTab: 0,
     inputShowed: false,
     inputVal: "",
+    listInfo:[
+      {"name":"全程"},
+      { "name": "精装" },
+      { "name": "毛培" },
+      { "name": "决算" },
+      { "name": "单次水电" },
+      { "name": "单次泥工" }
+      ],
     orderdataeList:[
       {orderNumber:'201814815144',
       types:"服务中",
@@ -53,6 +62,13 @@ Page({
         });
       }
     });
+  },
+  clickTab: function(e){
+    var that = this;
+    this.setData({
+      currentTab: e.target.dataset.current
+    })
+    console.log(e.target.dataset.current)
   },
   tabClick: function (e) {
     this.setData({

@@ -90,6 +90,11 @@
   height: 30px;
   line-height: 30px;
 }
+#shareBtn{
+  text-align:left;
+  background:#fff;
+  line-height:30px;
+}
 .icon-add{font-size: 22px;color:#f5d69b;}
 .icon-service{font-size: 22px;color:#518fec;}
 .icon-share{color:#7cec54;} 

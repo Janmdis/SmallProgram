@@ -1,11 +1,15 @@
 {
   "pages": [
+    
     "pages/view/userLogin/login/login",
+    "pages/view/userLogin/setInfo/setInfo",
+    "pages/view/userLogin/userInfo/userInfo",
     "pages/view/userLogin/perfectUser/perfectUser",
+    
     "pages/view/userLogin/quickLogon/quickLogon",
     "pages/view/userLogin/missCipher/missCipher",
-    "pages/view/userLogin/userInfo/userInfo",
-    "pages/view/userLogin/setInfo/setInfo",
+    
+   
     "pages/view/userLogin/setpass/setpass",
     
     "pages/view/orderHose/orderHose",
@@ -44,6 +48,7 @@
     "pages/view/presentationBox/associationReport/associationReport",
     "pages/view/presentationBox/disclose/disclose",
     "pages/view/presentationBox/presentation/presentation"
+   
   ],
   "window": {
     "backgroundTextStyle": "light",

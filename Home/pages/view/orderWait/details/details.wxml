@@ -47,6 +47,6 @@
         </view>
     </view>
     <view class='btngroup'>
-        <button class="weui-btn" type="primary">立即派单</button>
+        <button class="weui-btn" bindtap='upDateinfo' type="primary">立即接单</button>
     </view>
 </view>

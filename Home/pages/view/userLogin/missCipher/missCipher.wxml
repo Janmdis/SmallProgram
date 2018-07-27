@@ -5,7 +5,7 @@
       <view class="weui-cell weui-cell_input weui-cell_vcode">
           <view class="iconfont icon-users"></view>  
           <view class="weui-cell__bd">
-              <input name='iphone' class="weui-input" placeholder="手机号码" />
+              <input name='iphone' class="weui-input" bindblur="mobileInputEvent" placeholder="手机号码" />
           </view>
       </view>
       <view class="weui-cell weui-cell_input weui-cell_vcode">
@@ -14,7 +14,7 @@
               <input name='codenum' class="weui-input" placeholder="请输入验证码" />
           </view>
           <view class="weui-cell__ft">
-              <button class="weui-vcode-btn getcode" disabled='{{disabled}}' bindtap='getVerificationCode'>{{time}}</button>
+              <button class="weui-vcode-btn getcode" disabled='{{disabled}}' bindtap='getVerificationCode'>{{time}}                 </button>
           </view>
       </view>
       <view class="weui-cell weui-cell_input weui-cell_vcode">

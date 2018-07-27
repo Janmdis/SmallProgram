@@ -39,7 +39,7 @@
       </navigator>
     </view>
   </view>
-  <view class="page__bd">
+  <view class="page__bd pheight">
     <view class="weui-tab">
       <view class="weui-navbar">
         <block wx:for="{{tabs}}" wx:key="*this">
@@ -49,16 +49,11 @@
         </block>
         <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
       </view>
+      
+
       <view class="weui-tab__panel">
         <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
-          <view class='leftBox leftSize'>
-            <view class='sizeActive'>全程</view>
-            <view>精装</view>
-            <view>毛培</view>
-            <view>决算</view>
-            <view>单次水电</view>
-            <view>单次泥工</view>
-          </view>
+          
           <view class='rightBox'>
             <view class='listBox' wx:for="{{orderdataeList}}">
               <view class='listBoxTop'>
@@ -72,7 +67,7 @@
               </view>
               <view class='listBoxmiddle' bindtap='gopresent' data-type="{{item.typedata}}">
                 <view class='imgBox'>
-                  <image src="../../images/logo.png"></image>
+                  <image src="../../../images/logo.png"></image>
                 </view>
                 <view class='userInfoBox'>
                   <view class='textinfo'>{{item.name}}
@@ -103,9 +98,143 @@
             </view>
           </view>
         </view>
-        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">选项二的内容</view>
-        <view class="weui-tab__content" hidden="{{activeIndex != 2}}">选项三的内容</view>
-        <view class="weui-tab__content" hidden="{{activeIndex != 3}}">选项三的内容</view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}"><view class='rightBox'>
+            <view class='listBox' wx:for="{{orderdataeList}}">
+              <view class='listBoxTop'>
+                <view class=" weui-cells_after-title">
+                  <view class="weui-cell">
+                    <view class="weui-cell__bd">订单编号:{{item.orderNumber}}</view>
+                    <view class="weui-cell__ft">{{item.types}}
+                      <view class='linebox'></view>{{item.typedata}}</view>
+                  </view>
+                </view>
+              </view>
+              <view class='listBoxmiddle' bindtap='gopresent' data-type="{{item.typedata}}">
+                <view class='imgBox'>
+                  <image src="../../../images/logo.png"></image>
+                </view>
+                <view class='userInfoBox'>
+                  <view class='textinfo'>{{item.name}}
+                    <text>13111111111</text>
+                  </view>
+                  <view class='textOver'>
+                    <view class="iconfont icon-add"></view>
+                    <text>{{item.add}}</text>
+                  </view>
+                  <view>
+                    <view class="iconfont icon-jixiang"></view>
+                    <text>当前节点：{{item.node}}</text>
+                  </view>
+                  <view>
+                    <view class="iconfont icon-jixiang"></view>
+                    <text>当前节点：{{item.nextnode}}</text>
+                  </view>
+                </view>
+              </view>
+              <view class='listBoxbottom'>
+                <view class=" weui-cells_after-title">
+                  <view class="weui-cell">
+                    <view class="weui-cell__bd"></view>
+                    <button class="weui-btn buttonSize" bindtap='goassociationReport' type="primary">关联报告</button>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view></view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 2}}"><view class='rightBox'>
+            <view class='listBox' wx:for="{{orderdataeList}}">
+              <view class='listBoxTop'>
+                <view class=" weui-cells_after-title">
+                  <view class="weui-cell">
+                    <view class="weui-cell__bd">订单编号:{{item.orderNumber}}</view>
+                    <view class="weui-cell__ft">{{item.types}}
+                      <view class='linebox'></view>{{item.typedata}}</view>
+                  </view>
+                </view>
+              </view>
+              <view class='listBoxmiddle' bindtap='gopresent' data-type="{{item.typedata}}">
+                <view class='imgBox'>
+                  <image src="../../../images/logo.png"></image>
+                </view>
+                <view class='userInfoBox'>
+                  <view class='textinfo'>{{item.name}}
+                    <text>13111111111</text>
+                  </view>
+                  <view class='textOver'>
+                    <view class="iconfont icon-add"></view>
+                    <text>{{item.add}}</text>
+                  </view>
+                  <view>
+                    <view class="iconfont icon-jixiang"></view>
+                    <text>当前节点：{{item.node}}</text>
+                  </view>
+                  <view>
+                    <view class="iconfont icon-jixiang"></view>
+                    <text>当前节点：{{item.nextnode}}</text>
+                  </view>
+                </view>
+              </view>
+              <view class='listBoxbottom'>
+                <view class=" weui-cells_after-title">
+                  <view class="weui-cell">
+                    <view class="weui-cell__bd"></view>
+                    <button class="weui-btn buttonSize" bindtap='goassociationReport' type="primary">关联报告</button>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view></view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 3}}"><view class='rightBox'>
+            <view class='listBox' wx:for="{{orderdataeList}}">
+              <view class='listBoxTop'>
+                <view class=" weui-cells_after-title">
+                  <view class="weui-cell">
+                    <view class="weui-cell__bd">订单编号:{{item.orderNumber}}</view>
+                    <view class="weui-cell__ft">{{item.types}}
+                      <view class='linebox'></view>{{item.typedata}}</view>
+                  </view>
+                </view>
+              </view>
+              <view class='listBoxmiddle' bindtap='gopresent' data-type="{{item.typedata}}">
+                <view class='imgBox'>
+                  <image src="../../../images/logo.png"></image>
+                </view>
+                <view class='userInfoBox'>
+                  <view class='textinfo'>{{item.name}}
+                    <text>13111111111</text>
+                  </view>
+                  <view class='textOver'>
+                    <view class="iconfont icon-add"></view>
+                    <text>{{item.add}}</text>
+                  </view>
+                  <view>
+                    <view class="iconfont icon-jixiang"></view>
+                    <text>当前节点：{{item.node}}</text>
+                  </view>
+                  <view>
+                    <view class="iconfont icon-jixiang"></view>
+                    <text>当前节点：{{item.nextnode}}</text>
+                  </view>
+                </view>
+              </view>
+              <view class='listBoxbottom'>
+                <view class=" weui-cells_after-title">
+                  <view class="weui-cell">
+                    <view class="weui-cell__bd"></view>
+                    <button class="weui-btn buttonSize" bindtap='goassociationReport' type="primary">关联报告</button>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view></view>
+      </view>
+      <view class='leftBox leftSize'>
+        <view class="{{currentTab==index?'sizeActive':''}}" data-current="{{index}}" bindtap="clickTab" wx:for="{{listInfo}}">{{item.name}}</view>
+        <!-- <view>精装</view>
+        <view>毛培</view>
+        <view>决算</view>
+        <view>单次水电</view>
+        <view>单次泥工</view> -->
       </view>
     </view>
   </view>

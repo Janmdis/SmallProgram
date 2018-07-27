@@ -15,3 +15,8 @@
 page{
   height: 100%;
 }
+.imageSzie{
+  width:80rpx;
+  height:80rpx;  
+  padding-top: 20rpx;
+}

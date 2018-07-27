@@ -1,4 +1,7 @@
 // pages/view/orderDetails/orderDetails.js
+// pages/orderOwner/orderOwner.js
+var network = require("../../../../utils/network.js");
+var utilBox = require("../../../../utils/utilBox.js");
 Page({
 
   /**
@@ -58,7 +61,55 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    let info = wx.getStorageSync('orderInfo');
+    console.log(info.id)
+    network.requestLoading(
+      utilBox.urlheader + `public/entryreport/queryMapByProjectIds`,
+      [info.id], "",
+      function (res) {
+        console.log(res)
+        let resMessage = res.info
+        if (res.status == 200) {
+        }
+      }, function (res) {
+        // wx.showToast({
+        //   title: '加载数据失败',
+        // })
+      }, 'application/json');
+
+    if (info.orderDetail){
+      this.setData({
+        orderdetail: {
+          address: info.orderDetail.detailAddress,
+          number: info.orderInfo.number,
+          phone: info.orderDetail.phone,
+          servicename: info.orderDetail.categoryName,
+          type_house: info.commodityCategory.name,
+          uesrname: info.name,
+          remark: info.remarks!=null ? info.remarks:"",
+          "area_house": info.acreage,
+        }
+      })
+    }
+  },
+  upDateinfo:function(){
+    let info = wx.getStorageSync('orderInfo');
+    network.requestLoading(
+      utilBox.urlheader + `product/workList/arrangement`,
+      { projectEstablishIdList:[info.id],
+        adminList: [{ "adminId": "a2w21d3r4", "name": "思百", "phone": "18356121545" }
+          , { "adminId": "1w4r5y6u7i", "name": "赫伟", "phone": "13245181795" }]
+      }, "",
+      function (res) {
+        console.log(res)
+        let resMessage = res.info
+        if (res.status == 200) {
+        }
+      }, function (res) {
+        wx.showToast({
+          title: '加载数据失败',
+        })
+      }, 'application/json');
   },
 
   /**

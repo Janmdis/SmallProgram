@@ -11,7 +11,7 @@ let isNumber = (str) => {
 }
 //邮箱验证
 let isEmail = (str) => {
-  var reg = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+  var reg = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z0-9]{2,6}$/;
   return reg.test(str);
 }
 //手机验证
@@ -60,9 +60,20 @@ let isQQ = (str) => {
   var reg = /[1-9][0-9]{4,}/;
   return reg.test(str);
 }
+
+
+let userInfo = wx.getStorageSync("userInfo");
+let urlheader = "https://api.jingrunjia.com.cn/api/" 
+let reg = /[\W\w]*(JSESSIONID\=[\w\d\-]*)[\W\w]*/;
+let arr = reg.exec(userInfo.adminPassword);
+let cookie = RegExp.$1;
+
 module.exports = {
-  trims: trims,
-  isPhone: isPhone,
-  isNumber: isNumber,
-  isPass: isPass,
+  trims,
+  isPhone,
+  isNumber,
+  isPass,
+  cookie,
+  urlheader,
+  userInfo
 }
