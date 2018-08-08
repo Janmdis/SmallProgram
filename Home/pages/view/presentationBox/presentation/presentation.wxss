@@ -1,6 +1,5 @@
 .weui-navbar__slider{
-  width: 4rem;
-  margin-left: 1rem;
+  width: 5rem;
 }
 .weui-tab__panel .leftBox{
   width: 20%;
